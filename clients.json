@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Queensland Health",
+    "logo": "queensland-health.png",
+    "sector": "health",
+    "tier": "featured",
+    "confirmed": false
+  },
+  {
+    "name": "West Moreton Health",
+    "logo": "west-moreton-health.png",
+    "sector": "health",
+    "tier": "featured",
+    "confirmed": false
+  },
+  {
+    "name": "Children's Health Queensland",
+    "logo": "childrens-health-queensland.png",
+    "sector": "health",
+    "tier": "featured",
+    "confirmed": false
+  },
+  {
+    "name": "Brisbane South PHN",
+    "logo": "brisbane-south-phn.png",
+    "sector": "health",
+    "tier": "standard",
+    "confirmed": false
+  },
+  {
+    "name": "Growlife Medical",
+    "logo": "growlife-medical.png",
+    "sector": "health",
+    "tier": "standard",
+    "confirmed": false
+  },
+  {
+    "name": "Lung Foundation Australia",
+    "logo": "lung-foundation-australia.png",
+    "sector": "health",
+    "tier": "standard",
+    "confirmed": false
+  },
+  {
+    "name": "Department of the Premier and Cabinet",
+    "logo": "dept-premier-cabinet.png",
+    "sector": "government",
+    "tier": "featured",
+    "confirmed": false
+  },
+  {
+    "name": "Department of Justice",
+    "logo": "dept-justice.png",
+    "sector": "government",
+    "tier": "standard",
+    "confirmed": false
+  },
+  {
+    "name": "Department of Transport and Main Roads",
+    "logo": "dept-transport.png",
+    "sector": "government",
+    "tier": "standard",
+    "confirmed": false
+  },
+  {
+    "name": "yourtown",
+    "logo": "yourtown.png",
+    "sector": "community",
+    "tier": "featured",
+    "confirmed": false
+  },
+  {
+    "name": "ARBRE",
+    "logo": "arbre.png",
+    "sector": "community",
+    "tier": "standard",
+    "confirmed": false
+  }
+]
