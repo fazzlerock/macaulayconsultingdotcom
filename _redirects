@@ -1,9 +1,10 @@
 # Cloudflare Pages handles .html-less clean URLs natively.
-# These redirects ensure any links using .html still resolve cleanly.
-/about          /about.html          200
-/services       /services.html       200
-/more-joy-at-work /more-joy-at-work.html 200
-/contact        /contact.html        200
+# These redirects ensure any links using clean paths still resolve.
+/about              /about.html              200
+/services           /services.html           200
+/more-joy-at-work   /more-joy-at-work.html   200
+/contact            /contact.html            200
+/case-studies       /case-studies.html       200
 
 # Catch-all 404
-/*              /index.html          404
+/*                  /index.html              404

@@ -1,6 +1,6 @@
 /* Macaulay Consulting — main.js */
 
-/* ---- NAV: sticky shadow ---- */
+/* ---- NAV: sticky border on scroll ---- */
 const navEl = document.querySelector('.site-nav');
 if (navEl) {
   window.addEventListener('scroll', () => {
