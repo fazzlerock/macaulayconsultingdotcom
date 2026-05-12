@@ -85,13 +85,13 @@ if (hamburger && mobileNav) {
   if (!grid) return;
 
   try {
-    const res     = await fetch('/clients.json');
+    const res     = await fetch('clients.json');
     const clients = await res.json();
 
     grid.innerHTML = clients.map(client => {
       if (client.confirmed && client.logo) {
         return `<div class="client-item">
-          <img src="/assets/clients/${client.logo}" alt="${client.name}" loading="lazy">
+          <img src="assets/clients/${client.logo}" alt="${client.name}" loading="lazy">
         </div>`;
       }
       return `<div class="client-item client-item--placeholder">
