@@ -1,30 +1,30 @@
 /* ============================================================
    MACAULAY CONSULTING — STYLESHEET
-   Palette: Aubergine #40263A · Coral #E56B5D · Ochre #D8A43A
-            Blush #F6E7E2 · Sage #8DA58F · Charcoal #2B2B2B
+   Palette: Theatre Plum #41283B · Cumquat #F28C28 · Ochre #D7A13B
+            Warm Sand #F5E8D8 · Olive Sage #8A9B6E · Charcoal #2B2B2B
    Fonts: Fraunces (display) · Inter (body) · Caveat (accent)
    ============================================================ */
 
 /* ---- CUSTOM PROPERTIES ---- */
 :root {
-  --c-aubergine:     #40263A;
-  --c-aubergine-dk:  #2E1A29;
-  --c-aubergine-mid: #5C3A52;
-  --c-coral:         #E56B5D;
-  --c-coral-dk:      #C95040;
-  --c-ochre:         #D8A43A;
-  --c-ochre-lt:      #EFC97A;
-  --c-blush:         #F6E7E2;
-  --c-blush-dk:      #EDD5CC;
-  --c-sage:          #8DA58F;
-  --c-sage-dk:       #6A8A6C;
+  --c-aubergine:     #41283B;
+  --c-aubergine-dk:  #2D1A29;
+  --c-aubergine-mid: #5C344E;
+  --c-coral:         #F28C28;
+  --c-coral-dk:      #D96A1D;
+  --c-ochre:         #D7A13B;
+  --c-ochre-lt:      #EEC96E;
+  --c-blush:         #F5E8D8;
+  --c-blush-dk:      #EAD4BC;
+  --c-sage:          #8A9B6E;
+  --c-sage-dk:       #6A7A52;
   --c-charcoal:      #2B2B2B;
-  --c-charcoal-lt:   #565656;
+  --c-charcoal-lt:   #5A5552;
   --c-white:         #FFFFFF;
-  --c-parchment:     #FAF6F0;
-  --c-warm-white:    #FAFAF8;
-  --c-border:        #E2D8D3;
-  --c-border-lt:     #EDE6E2;
+  --c-parchment:     #FAF5EF;
+  --c-warm-white:    #FFF8F2;
+  --c-border:        #E5D5C2;
+  --c-border-lt:     #EEE3D5;
 
   --f-display: 'Fraunces', Georgia, serif;
   --f-body:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -40,10 +40,10 @@
   --r-lg:   18px;
   --r-pill: 100px;
 
-  --shadow-sm: 0 1px 4px rgba(44,26,40,.07);
-  --shadow:    0 4px 20px rgba(44,26,40,.11);
-  --shadow-lg: 0 8px 40px rgba(44,26,40,.17);
-  --shadow-warm: 0 6px 28px rgba(229,107,93,.25);
+  --shadow-sm: 0 1px 4px rgba(43,26,40,.07);
+  --shadow:    0 4px 20px rgba(43,26,40,.11);
+  --shadow-lg: 0 8px 40px rgba(43,26,40,.17);
+  --shadow-warm: 0 6px 28px rgba(242,140,40,.28);
 
   --t:      0.22s ease;
   --t-slow: 0.4s ease;
@@ -280,9 +280,8 @@ strong { font-weight: 600; }
 }
 .hero--stage {
   background:
-    radial-gradient(ellipse 75% 65% at 68% 38%, rgba(229,107,93,.27) 0%, transparent 68%),
-    radial-gradient(ellipse 55% 55% at 8% 88%,  rgba(216,164,58,.17) 0%, transparent 60%),
-    linear-gradient(155deg, #3C1E36 0%, #40263A 55%, #2E1A29 100%);
+    radial-gradient(ellipse 55% 60% at 8% 85%,  rgba(215,161,59,.18) 0%, transparent 60%),
+    linear-gradient(135deg, #41283B 0%, #5C344E 42%, #C8641A 100%);
   color: var(--c-blush);
   min-height: 88vh;
   display: flex;
@@ -346,7 +345,7 @@ strong { font-weight: 600; }
   width: 520px;
   height: 520px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(216,164,58,.07), transparent 70%);
+  background: radial-gradient(circle, rgba(242,140,40,.08), transparent 70%);
   pointer-events: none;
 }
 
@@ -591,7 +590,7 @@ strong { font-weight: 600; }
 .cta-section::before {
   content: '';
   position: absolute; inset: 0;
-  background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(229,107,93,.14), transparent 70%);
+  background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(242,140,40,.14), transparent 70%);
   pointer-events: none;
 }
 .cta-section h2 { color: var(--c-white); }
