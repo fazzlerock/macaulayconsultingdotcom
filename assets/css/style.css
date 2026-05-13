@@ -367,14 +367,7 @@ h1 em, h2 em, h3 em, h4 em {
   position: relative;
   transition: transform var(--t);
 }
-.workshop-card:nth-child(1) { transform: rotate(-0.5deg); }
-.workshop-card:nth-child(2) { transform: rotate(0.6deg); }
-.workshop-card:nth-child(3) { transform: rotate(0.3deg); }
-.workshop-card:nth-child(4) { transform: rotate(-0.5deg); }
-.workshop-card:nth-child(1):hover { transform: rotate(-0.5deg) translateY(-4px); }
-.workshop-card:nth-child(2):hover { transform: rotate(0.6deg) translateY(-4px); }
-.workshop-card:nth-child(3):hover { transform: rotate(0.3deg) translateY(-4px); }
-.workshop-card:nth-child(4):hover { transform: rotate(-0.5deg) translateY(-4px); }
+.workshop-card:hover { transform: translateY(-4px); }
 
 .wc-num {
   font-family: var(--font-display);
