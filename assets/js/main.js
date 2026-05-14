@@ -105,6 +105,26 @@ if (hamburger && mobileNav) {
   }
 })();
 
+/* ---- FOOTER LAST-UPDATED ---- */
+(function () {
+  var meta   = document.querySelector('meta[name="last-updated"]');
+  var footer = document.querySelector('.footer-bar');
+  if (!meta || !footer) return;
+
+  var raw   = meta.getAttribute('content');
+  var parts = raw.split('-');
+  if (parts.length !== 3) return;
+
+  var months    = ['January','February','March','April','May','June',
+                   'July','August','September','October','November','December'];
+  var formatted = parseInt(parts[2], 10) + ' ' + months[parseInt(parts[1], 10) - 1] + ' ' + parts[0];
+
+  var span = document.createElement('span');
+  span.className   = 'footer-updated';
+  span.textContent = 'Updated ' + formatted;
+  footer.appendChild(span);
+})();
+
 /* ---- SCROLL REVEAL ---- */
 (function () {
   const els = document.querySelectorAll('.reveal');

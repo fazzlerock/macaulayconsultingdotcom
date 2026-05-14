@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="../assets/logos/cm-consulting-logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="last-updated" content="2026-05-14">
+  <title>Site Status | Macaulay Consulting</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <style>
+    .status-page { padding-top: calc(var(--nav-h) + 48px); padding-bottom: 96px; }
+
+    #status-loading {
+      color: var(--color-slate);
+      font-family: var(--font-body);
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    #status-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 40px;
+      font-family: var(--font-body);
+      font-size: 14px;
+    }
+    #status-table th {
+      text-align: left;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-slate);
+      padding: 10px 16px;
+      border-bottom: 2px solid var(--color-stone);
+      background: var(--color-linen);
+    }
+    #status-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--color-stone);
+      vertical-align: top;
+      color: var(--color-text);
+      line-height: 1.55;
+    }
+    #status-table tr:hover td { background: var(--color-linen); }
+    #status-table td a {
+      color: var(--color-cumquat);
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    #status-table td a:hover { color: var(--color-cumquat-dark); }
+
+    #status-note {
+      margin-top: 16px;
+      font-family: var(--font-body);
+      font-size: 13px;
+      color: var(--color-slate);
+    }
+
+    .deploy-notes {
+      margin-top: 48px;
+      padding: 24px;
+      background: var(--color-linen);
+      border-radius: 4px;
+      border-left: 3px solid var(--color-cumquat);
+    }
+    .deploy-notes h3 {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+    .deploy-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 32px;
+    }
+    .deploy-list li {
+      font-size: 13px;
+      color: var(--color-slate);
+      padding: 2px 0 2px 14px;
+      position: relative;
+    }
+    .deploy-list li::before {
+      content: '–';
+      color: var(--color-cumquat);
+      position: absolute;
+      left: 0;
+    }
+
+    @media (max-width: 680px) {
+      #status-table th:nth-child(4),
+      #status-table td:nth-child(4) { display: none; }
+      .deploy-list { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo">Macaulay Consulting</a>
+    <ul class="nav-links" role="list">
+      <li><a href="../index.html">← Back to site</a></li>
+      <li><a href="../visual-identity.html">Visual Identity</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="status-page">
+  <div class="container">
+
+    <span class="section-label">Internal reference — not indexed</span>
+    <h1 style="margin-bottom: 8px;">Site Status</h1>
+    <p style="color: var(--color-slate); margin-bottom: 40px;">All pages on the Macaulay Consulting website — last updated dates pulled live from each page.</p>
+
+    <div id="status-loading">Fetching pages…</div>
+
+    <table id="status-table" style="display:none;">
+      <thead>
+        <tr>
+          <th style="width:22%;">Page</th>
+          <th style="width:30%;">Path</th>
+          <th style="width:22%;">Last updated</th>
+          <th style="width:26%;">Age</th>
+        </tr>
+      </thead>
+      <tbody id="status-tbody"></tbody>
+    </table>
+
+    <p id="status-note" style="display:none;">Dates are read live from the <code>meta[name="last-updated"]</code> tag on each page. Update that tag whenever a page's content changes.</p>
+
+    <div class="deploy-notes">
+      <h3>Deployment notes</h3>
+      <ul class="deploy-list">
+        <li>Hosted on Cloudflare Pages from GitHub repo <strong>fazzlerock/macaulayconsultingdotcom</strong></li>
+        <li>Contact form uses Web3Forms — key required before form is live</li>
+        <li>Google Business Profile — set up once domain consultcm.com.au is live</li>
+        <li>Client logos — PNGs in <code>assets/clients/</code>, set <code>confirmed: true</code> in <code>clients.json</code></li>
+        <li>Clean URLs handled by Cloudflare Pages natively via <code>_redirects</code></li>
+        <li>Logo artwork — improved versions needed for nav and footer</li>
+        <li>Headshot — place at <code>assets/caroline-macaulay.jpg</code> and uncomment img tag in about.html</li>
+        <li>Video embed — add YouTube/Vimeo URL in more-joy-at-work.html once available</li>
+      </ul>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <span class="footer-logo">Macaulay Consulting</span>
+        <div class="footer-contact">
+          <a href="mailto:caro@consultcm.com.au">caro@consultcm.com.au</a>
+          <a href="tel:+61404014117">+61 404 014 117</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-acknowledgement">Macaulay Consulting acknowledges the Traditional Custodians of the lands on which we work, the Turrbal and Jagera peoples of Meanjin (Brisbane), and pays respect to Elders past and present.</p>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <span class="footer-copy">© 2025 Macaulay Consulting. Internal reference — not for distribution.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+<script>
+(function () {
+
+  var PAGES = [
+    { name: 'Home',             path: '/index.html' },
+    { name: 'About',            path: '/about.html' },
+    { name: 'Services',         path: '/services.html' },
+    { name: 'Case Studies',     path: '/case-studies.html' },
+    { name: 'More Joy at Work', path: '/more-joy-at-work.html' },
+    { name: 'Contact',          path: '/contact.html' },
+    { name: 'Visual Identity',  path: '/visual-identity.html' },
+    { name: 'Status',           path: '/status/index.html' },
+  ];
+
+  var MONTHS = ['January','February','March','April','May','June',
+                'July','August','September','October','November','December'];
+
+  function parseDate(str) {
+    if (!str) return null;
+    var p = str.split('-');
+    if (p.length !== 3) return null;
+    return new Date(parseInt(p[0]), parseInt(p[1]) - 1, parseInt(p[2]));
+  }
+
+  function formatDate(d) {
+    if (!d) return '—';
+    return d.getDate() + ' ' + MONTHS[d.getMonth()] + ' ' + d.getFullYear();
+  }
+
+  function daysSince(d) {
+    if (!d) return null;
+    return Math.floor((Date.now() - d.getTime()) / 86400000);
+  }
+
+  function ageBadge(days) {
+    if (days === null) return '<span style="color:#999;">—</span>';
+    var colour = days <= 14 ? '#1a7a4a' : days <= 60 ? '#7a6a1a' : '#999';
+    return '<span style="color:' + colour + ';font-weight:600;">' + days + ' days</span>';
+  }
+
+  function fetchPage(page) {
+    return fetch(page.path)
+      .then(function (res) { return res.text(); })
+      .then(function (html) {
+        var doc  = new DOMParser().parseFromString(html, 'text/html');
+        var meta = doc.querySelector('meta[name="last-updated"]');
+        return { page: page, date: parseDate(meta ? meta.getAttribute('content') : null) };
+      })
+      .catch(function () { return { page: page, date: null }; });
+  }
+
+  var loading = document.getElementById('status-loading');
+  var table   = document.getElementById('status-table');
+  var tbody   = document.getElementById('status-tbody');
+  var note    = document.getElementById('status-note');
+
+  Promise.all(PAGES.map(fetchPage)).then(function (results) {
+    results.forEach(function (r) {
+      var days = daysSince(r.date);
+      var tr   = document.createElement('tr');
+      tr.innerHTML =
+        '<td>' + r.page.name + '</td>' +
+        '<td><a href="' + r.page.path + '">' + r.page.path + '</a></td>' +
+        '<td>' + formatDate(r.date) + '</td>' +
+        '<td>' + ageBadge(days) + '</td>';
+      tbody.appendChild(tr);
+    });
+    loading.style.display = 'none';
+    table.style.display   = '';
+    note.style.display    = '';
+  });
+
+})();
+</script>
+</body>
+</html>
