@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Status | Macaulay Consulting</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    .status-page { padding-top: calc(var(--nav-h) + 48px); padding-bottom: 96px; }
+
+    .status-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 40px;
+      font-family: var(--font-body);
+      font-size: 14px;
+    }
+    .status-table th {
+      text-align: left;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-slate);
+      padding: 10px 16px;
+      border-bottom: 2px solid var(--color-stone);
+      background: var(--color-linen);
+    }
+    .status-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--color-stone);
+      vertical-align: top;
+      color: var(--color-text);
+      line-height: 1.55;
+    }
+    .status-table tr:hover td { background: var(--color-linen); }
+
+    .status-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 3px;
+      letter-spacing: 0.04em;
+    }
+    .badge-live    { background: #d4edda; color: #155724; }
+    .badge-pending { background: #fff3cd; color: #856404; }
+    .badge-draft   { background: #f8d7da; color: #721c24; }
+
+    .page-link {
+      color: var(--color-cumquat);
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .page-link:hover { color: var(--color-cumquat-dark); }
+
+    .pending-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .pending-list li {
+      font-size: 13px;
+      color: var(--color-slate);
+      padding: 2px 0;
+      padding-left: 14px;
+      position: relative;
+    }
+    .pending-list li::before {
+      content: '–';
+      color: var(--color-cumquat);
+      position: absolute;
+      left: 0;
+    }
+
+    .date-cell {
+      white-space: nowrap;
+      color: var(--color-slate);
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+    .summary-card {
+      background: var(--color-linen);
+      border-radius: 4px;
+      padding: 20px 24px;
+      text-align: center;
+    }
+    .summary-num {
+      font-family: var(--font-display);
+      font-size: 48px;
+      font-weight: 300;
+      color: var(--color-moss);
+      line-height: 1;
+      display: block;
+    }
+    .summary-label {
+      font-family: var(--font-body);
+      font-size: 13px;
+      color: var(--color-slate);
+      margin-top: 6px;
+      display: block;
+    }
+
+    @media (max-width: 860px) {
+      .status-table { font-size: 13px; }
+      .status-table th, .status-table td { padding: 10px 10px; }
+      .summary-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 580px) {
+      .status-table th:nth-child(4),
+      .status-table td:nth-child(4) { display: none; }
+      .summary-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Macaulay Consulting</a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">← Back to site</a></li>
+      <li><a href="visual-identity.html">Visual Identity</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="status-page">
+  <div class="container">
+
+    <span class="section-label">Internal reference — not indexed</span>
+    <h1 style="margin-bottom: 8px;">Site Status</h1>
+    <p style="color: var(--color-slate); margin-bottom: 40px;">All pages on the Macaulay Consulting website, their current status, last updated date and any outstanding items.</p>
+
+    <div class="summary-grid">
+      <div class="summary-card">
+        <span class="summary-num">6</span>
+        <span class="summary-label">Public pages</span>
+      </div>
+      <div class="summary-card">
+        <span class="summary-num">2</span>
+        <span class="summary-label">Internal reference pages</span>
+      </div>
+      <div class="summary-card">
+        <span class="summary-num">5</span>
+        <span class="summary-label">Items pending Caroline's input</span>
+      </div>
+    </div>
+
+    <table class="status-table">
+      <thead>
+        <tr>
+          <th style="width: 18%;">Page</th>
+          <th style="width: 8%;">Status</th>
+          <th style="width: 12%;">Last updated</th>
+          <th style="width: 62%;">Pending items</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td>
+            <a href="index.html" class="page-link">Home</a><br>
+            <span style="font-size: 12px; color: var(--color-slate);">index.html</span>
+          </td>
+          <td><span class="status-badge badge-pending">Pending</span></td>
+          <td class="date-cell">14 May 2026</td>
+          <td>
+            <ul class="pending-list">
+              <li>Client logos — PNG files uploaded, need confirming in clients.json (set <code>confirmed: true</code> per client)</li>
+              <li>Logo in nav and footer — awaiting improved artwork from Caroline</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="about.html" class="page-link">About</a><br>
+            <span style="font-size: 12px; color: var(--color-slate);">about.html</span>
+          </td>
+          <td><span class="status-badge badge-pending">Pending</span></td>
+          <td class="date-cell">14 May 2026</td>
+          <td>
+            <ul class="pending-list">
+              <li>Headshot — place at <code>assets/caroline-macaulay.jpg</code> and uncomment the <code>&lt;img&gt;</code> tag in the bio section</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="services.html" class="page-link">Services</a><br>
+            <span style="font-size: 12px; color: var(--color-slate);">services.html</span>
+          </td>
+          <td><span class="status-badge badge-live">Live</span></td>
+          <td class="date-cell">14 May 2026</td>
+          <td>
+            <ul class="pending-list">
+              <li>Content review by Caroline — confirm all service descriptions and bullet points are accurate</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="case-studies.html" class="page-link">Case Studies</a><br>
+            <span style="font-size: 12px; color: var(--color-slate);">case-studies.html</span>
+          </td>
+          <td><span class="status-badge badge-pending">Pending</span></td>
+          <td class="date-cell">14 May 2026</td>
+          <td>
+            <ul class="pending-list">
+              <li>3–5 case study entries from Caroline — one placeholder (West Moreton Health) is drafted, 3 further placeholders await content</li>
+              <li>Caroline to confirm West Moreton case study details are accurate and approved to publish</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="more-joy-at-work.html" class="page-link">More Joy at Work</a><br>
+            <span style="font-size: 12px; color: var(--color-slate);">more-joy-at-work.html</span>
+          </td>
+          <td><span class="status-badge badge-pending">Pending</span></td>
+          <td class="date-cell">14 May 2026</td>
+          <td>
+            <ul class="pending-list">
+              <li>Programme details — Caroline to review phase names, sequence and descriptions</li>
+              <li>Video embed — add YouTube/Vimeo URL once content is published; replace placeholder block</li>
+              <li>Social channel links beyond LinkedIn</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="contact.html" class="page-link">Contact</a><br>
+            <span style="font-size: 12px; color: var(--color-slate);">contact.html</span>
+          </td>
+          <td><span class="status-badge badge-pending">Pending</span></td>
+          <td class="date-cell">14 May 2026</td>
+          <td>
+            <ul class="pending-list">
+              <li>Web3Forms access key — go to web3forms.com, enter caro@consultcm.com.au, paste key into <code>contact.html</code> and remove <code>onsubmit="return false;"</code></li>
+              <li>Remove "Form not yet active" note once form is wired up</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr style="background: var(--color-linen);">
+          <td>
+            <a href="visual-identity.html" class="page-link">Visual Identity</a><br>
+            <span style="font-size: 12px; color: var(--color-slate);">visual-identity.html — internal only</span>
+          </td>
+          <td><span class="status-badge badge-live">Live</span></td>
+          <td class="date-cell">14 May 2026</td>
+          <td>
+            <ul class="pending-list">
+              <li>Update logo section once improved artwork is available</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr style="background: var(--color-linen);">
+          <td>
+            <a href="site-status.html" class="page-link">Site Status</a><br>
+            <span style="font-size: 12px; color: var(--color-slate);">site-status.html — internal only</span>
+          </td>
+          <td><span class="status-badge badge-live">Live</span></td>
+          <td class="date-cell">14 May 2026</td>
+          <td>
+            <ul class="pending-list">
+              <li>Update pending items and dates as content is added and tasks are completed</li>
+            </ul>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <div style="margin-top: 48px; padding: 24px; background: var(--color-linen); border-radius: 4px; border-left: 3px solid var(--color-cumquat);">
+      <h3 style="font-size: 18px; margin-bottom: 12px;">Deployment notes</h3>
+      <ul class="pending-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px 32px;">
+        <li>Hosted on Cloudflare Pages from GitHub repo <strong>fazzlerock/macaulayconsultingdotcom</strong></li>
+        <li>Contact form uses Web3Forms — key required before form is live</li>
+        <li>Google Business Profile — set up once domain consultcm.com.au is live</li>
+        <li>Client logos — PNGs in <code>assets/clients/</code>, set <code>confirmed: true</code> in <code>clients.json</code></li>
+        <li>Clean URLs handled by Cloudflare Pages natively via <code>_redirects</code></li>
+        <li>Logo artwork — improved versions needed for nav and footer</li>
+      </ul>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <span class="footer-logo">Macaulay Consulting</span>
+        <div class="footer-contact">
+          <a href="mailto:caro@consultcm.com.au">caro@consultcm.com.au</a>
+          <a href="tel:+61404014117">+61 404 014 117</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-acknowledgement">Macaulay Consulting acknowledges the Traditional Custodians of the lands on which we work, the Turrbal and Jagera peoples of Meanjin (Brisbane), and pays respect to Elders past and present.</p>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <span class="footer-updated">Last updated: 14 May 2026</span>
+      <span class="footer-copy">© 2025 Macaulay Consulting. Internal reference — not for distribution.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
