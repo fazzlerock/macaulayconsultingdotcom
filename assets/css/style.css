@@ -613,11 +613,6 @@ h1 em, h2 em, h3 em, h4 em {
   display: block;
   margin-bottom: 16px;
 }
-.footer-updated {
-  font-family: var(--font-body);
-  font-size: 12px;
-  color: rgba(250,247,242,0.3);
-}
 .footer-contact { display: flex; flex-direction: column; gap: 6px; }
 .footer-contact a {
   font-family: var(--font-body);

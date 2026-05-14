@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Macaulay Consulting — Font System Comparison</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Original -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Modern options -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --moss: #2A3B30;
+      --moss-dark: #1E2C24;
+      --parchment: #FAF7F2;
+      --linen: #F0EAE0;
+      --cumquat: #E07828;
+      --stone: #DDD5C8;
+      --slate: #5C5248;
+      --charcoal: #1E1A16;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--parchment);
+      color: var(--charcoal);
+      font-family: system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
+    }
+
+    .page-header {
+      background: var(--moss);
+      padding: 90px 0 72px;
+      color: var(--parchment);
+    }
+
+    .container {
+      width: min(calc(100% - 48px), 1300px);
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: rgba(250,247,242,0.7);
+      margin-bottom: 20px;
+    }
+
+    .page-title {
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 10ch;
+      margin-bottom: 20px;
+    }
+
+    .page-intro {
+      max-width: 64ch;
+      color: rgba(250,247,242,0.8);
+      font-size: 1.05rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 24px;
+      padding: 48px 0 72px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid rgba(0,0,0,0.06);
+      border-radius: 24px;
+      overflow: hidden;
+    }
+
+    .card-top {
+      padding: 22px 26px;
+      border-bottom: 1px solid var(--stone);
+      background: var(--linen);
+    }
+
+    .system-name {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .system-meta {
+      font-size: 0.9rem;
+      color: var(--slate);
+    }
+
+    .preview {
+      padding: 36px;
+    }
+
+    .label {
+      display: inline-block;
+      margin-bottom: 18px;
+      color: var(--cumquat);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+
+    .hero {
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      line-height: 0.98;
+      margin-bottom: 20px;
+      letter-spacing: -0.04em;
+      color: var(--charcoal);
+    }
+
+    .hero em {
+      color: var(--cumquat);
+      font-style: normal;
+    }
+
+    .body {
+      margin-bottom: 28px;
+      color: var(--slate);
+      max-width: 52ch;
+      font-size: 1rem;
+    }
+
+    .button-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 14px 22px;
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 700;
+    }
+
+    .btn-primary {
+      background: var(--cumquat);
+      color: white;
+    }
+
+    .btn-secondary {
+      border: 1px solid rgba(224,120,40,0.24);
+      color: var(--cumquat);
+      background: rgba(224,120,40,0.08);
+    }
+
+    .notes {
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px solid var(--stone);
+      font-size: 0.9rem;
+      color: var(--slate);
+    }
+
+    /* 1 ORIGINAL */
+    .original .hero,
+    .original .system-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+    }
+
+    .original .body,
+    .original .system-meta,
+    .original .notes,
+    .original .btn {
+      font-family: 'Lora', serif;
+    }
+
+    /* 2 FRAUNCES + PLUS JAKARTA */
+    .fraunces .hero,
+    .fraunces .system-name {
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+    }
+
+    .fraunces .body,
+    .fraunces .system-meta,
+    .fraunces .notes,
+    .fraunces .btn {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* 3 MANROPE */
+    .manrope .hero,
+    .manrope .system-name,
+    .manrope .body,
+    .manrope .system-meta,
+    .manrope .notes,
+    .manrope .btn {
+      font-family: 'Manrope', sans-serif;
+    }
+
+    /* 4 DM SANS */
+    .dm .hero,
+    .dm .system-name,
+    .dm .body,
+    .dm .system-meta,
+    .dm .notes,
+    .dm .btn {
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    /* 5 SPACE GROTESK */
+    .space .hero,
+    .space .system-name,
+    .space .body,
+    .space .system-meta,
+    .space .notes,
+    .space .btn {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    /* 6 OUTFIT */
+    .outfit .hero,
+    .outfit .system-name,
+    .outfit .body,
+    .outfit .system-meta,
+    .outfit .notes,
+    .outfit .btn {
+      font-family: 'Outfit', sans-serif;
+    }
+
+    /* 7 MIXED MODERN */
+    .mixed .hero,
+    .mixed .system-name {
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+    }
+
+    .mixed .body,
+    .mixed .system-meta,
+    .mixed .notes,
+    .mixed .btn {
+      font-family: 'Manrope', sans-serif;
+    }
+
+    @media (max-width: 640px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .preview {
+        padding: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="page-header">
+    <div class="container">
+      <span class="eyebrow">Typography exploration</span>
+      <h1 class="page-title">Macaulay Consulting Font System Comparison</h1>
+      <p class="page-intro">
+        A visual comparison of the original typography system alongside six alternative modern directions focused on warmth, clarity, creativity and joy.
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="grid">
+
+      <!-- ORIGINAL -->
+      <section class="card original">
+        <div class="card-top">
+          <div class="system-name">Original System</div>
+          <div class="system-meta">Cormorant Garamond + Lora</div>
+        </div>
+
+        <div class="preview">
+          <span class="label">Editorial / elegant</span>
+          <h2 class="hero">Turning good intentions into <em>clarity and results.</em></h2>
+          <p class="body">
+            Warm and intelligent with a classic editorial tone. Strongly associated with publishing, academia and traditional consultancy aesthetics.
+          </p>
+
+          <div class="button-row">
+            <a href="#" class="btn btn-primary">Primary button</a>
+            <a href="#" class="btn btn-secondary">Learn more</a>
+          </div>
+
+          <div class="notes">
+            Elegant and thoughtful, but potentially more formal or traditional than intended.
+          </div>
+        </div>
+      </section>
+
+      <!-- FRAUNCES -->
+      <section class="card fraunces">
+        <div class="card-top">
+          <div class="system-name">Modern Warm</div>
+          <div class="system-meta">Fraunces + Plus Jakarta Sans</div>
+        </div>
+
+        <div class="preview">
+          <span class="label">Warm / modern / joyful</span>
+          <h2 class="hero">Turning good intentions into <em>clarity and results.</em></h2>
+          <p class="body">
+            Contemporary and optimistic while preserving warmth and humanity. Balances professionalism with friendliness.
+          </p>
+
+          <div class="button-row">
+            <a href="#" class="btn btn-primary">Primary button</a>
+            <a href="#" class="btn btn-secondary">Learn more</a>
+          </div>
+
+          <div class="notes">
+            Probably the strongest overall fit for Macaulay Consulting.
+          </div>
+        </div>
+      </section>
+
+      <!-- MANROPE -->
+      <section class="card manrope">
+        <div class="card-top">
+          <div class="system-name">Minimal Contemporary</div>
+          <div class="system-meta">Manrope</div>
+        </div>
+
+        <div class="preview">
+          <span class="label">Minimal / calm / refined</span>
+          <h2 class="hero">Turning good intentions into <em>clarity and results.</em></h2>
+          <p class="body">
+            Clean and restrained with a premium feel. Excellent readability and a quieter modern confidence.
+          </p>
+
+          <div class="button-row">
+            <a href="#" class="btn btn-primary">Primary button</a>
+            <a href="#" class="btn btn-secondary">Learn more</a>
+          </div>
+
+          <div class="notes">
+            Sophisticated and timeless, though less expressive than the warmer options.
+          </div>
+        </div>
+      </section>
+
+      <!-- DM SANS -->
+      <section class="card dm">
+        <div class="card-top">
+          <div class="system-name">Friendly Professional</div>
+          <div class="system-meta">DM Sans</div>
+        </div>
+
+        <div class="preview">
+          <span class="label">Approachable / versatile</span>
+          <h2 class="hero">Turning good intentions into <em>clarity and results.</em></h2>
+          <p class="body">
+            Human and highly readable with a softer rhythm than many geometric sans-serif systems.
+          </p>
+
+          <div class="button-row">
+            <a href="#" class="btn btn-primary">Primary button</a>
+            <a href="#" class="btn btn-secondary">Learn more</a>
+          </div>
+
+          <div class="notes">
+            Safe but strong — approachable without becoming bland.
+          </div>
+        </div>
+      </section>
+
+      <!-- SPACE GROTESK -->
+      <section class="card space">
+        <div class="card-top">
+          <div class="system-name">Creative Consultancy</div>
+          <div class="system-meta">Space Grotesk</div>
+        </div>
+
+        <div class="preview">
+          <span class="label">Creative / energetic / distinct</span>
+          <h2 class="hero">Turning good intentions into <em>clarity and results.</em></h2>
+          <p class="body">
+            More expressive and contemporary. Adds personality and confidence without feeling overly playful.
+          </p>
+
+          <div class="button-row">
+            <a href="#" class="btn btn-primary">Primary button</a>
+            <a href="#" class="btn btn-secondary">Learn more</a>
+          </div>
+
+          <div class="notes">
+            Great if you want the brand to feel more innovative or workshop-led.
+          </div>
+        </div>
+      </section>
+
+      <!-- OUTFIT -->
+      <section class="card outfit">
+        <div class="card-top">
+          <div class="system-name">Soft Geometric</div>
+          <div class="system-meta">Outfit</div>
+        </div>
+
+        <div class="preview">
+          <span class="label">Friendly / clean / digital</span>
+          <h2 class="hero">Turning good intentions into <em>clarity and results.</em></h2>
+          <p class="body">
+            Rounded and optimistic with excellent screen readability and a softer contemporary tone.
+          </p>
+
+          <div class="button-row">
+            <a href="#" class="btn btn-primary">Primary button</a>
+            <a href="#" class="btn btn-secondary">Learn more</a>
+          </div>
+
+          <div class="notes">
+            Feels very current and welcoming.
+          </div>
+        </div>
+      </section>
+
+      <!-- MIXED -->
+      <section class="card mixed">
+        <div class="card-top">
+          <div class="system-name">Premium Humanist</div>
+          <div class="system-meta">Fraunces + Manrope</div>
+        </div>
+
+        <div class="preview">
+          <span class="label">Premium / warm / strategic</span>
+          <h2 class="hero">Turning good intentions into <em>clarity and results.</em></h2>
+          <p class="body">
+            A balanced hybrid system combining expressive warmth with clean strategic clarity.
+          </p>
+
+          <div class="button-row">
+            <a href="#" class="btn btn-primary">Primary button</a>
+            <a href="#" class="btn btn-secondary">Learn more</a>
+          </div>
+
+          <div class="notes">
+            Strong option if you want a more premium consultancy positioning.
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+</body>
+</html>
