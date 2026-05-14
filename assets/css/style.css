@@ -617,8 +617,6 @@ h1 em, h2 em, h3 em, h4 em {
   font-family: var(--font-body);
   font-size: 12px;
   color: rgba(250,247,242,0.3);
-  display: block;
-  margin-top: 4px;
 }
 .footer-contact { display: flex; flex-direction: column; gap: 6px; }
 .footer-contact a {
