@@ -223,6 +223,8 @@ Logo PNGs should be square or landscape, transparent background, greyscale or da
 
 ## SEO
 
+**Source of truth for SEO metadata:** `seo_metadata.csv` — one row per page. Update this file at the same time as editing a page's `<head>` meta tags.
+
 ### Meta tags — every page needs
 - `<meta name="description">` — unique per page, 150–160 characters
 - Open Graph: `og:type`, `og:url`, `og:title`, `og:description`, `og:image`
