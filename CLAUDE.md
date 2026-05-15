@@ -4,6 +4,9 @@ Static HTML website. No build tools, no frameworks — plain HTML, CSS, and JS, 
 
 Claude Code acts as the CMS: when content needs updating, edit the HTML files directly and push to deploy.
 
+**Source of truth for all page copy:** `content_copy.md`
+**Source of truth for SEO metadata:** `seo_metadata.csv`
+
 ---
 
 ## File structure
@@ -39,7 +42,7 @@ Claude Code acts as the CMS: when content needs updating, edit the HTML files di
 
 ## Working with this project
 
-**To update content:** edit the relevant `.html` file directly. When editing a page's content (body copy, headings, links — not just nav, footer, or structural/CSS changes shared across pages), also update `<meta name="last-updated" content="YYYY-MM-DD">` in that page's `<head>` to today's date.
+**To update content:** refer to `content_copy.md` for the correct copy, then edit the relevant `.html` file directly. When editing a page's content (body copy, headings, links — not just nav, footer, or structural/CSS changes shared across pages), also update `<meta name="last-updated" content="YYYY-MM-DD">` in that page's `<head>` to today's date.
 
 **To add a page:**
 1. Create a new `.html` file in the appropriate location.
