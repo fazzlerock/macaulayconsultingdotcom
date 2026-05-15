@@ -1,79 +1,63 @@
-[
-  {
-    "name": "Queensland Health",
-    "logo": "queensland-health.png",
-    "sector": "health",
-    "tier": "featured",
-    "confirmed": false
+{
+  "queensland_government": {
+    "label": "Queensland Government",
+    "crest": "queensland-government.svg",
+    "departments": [
+      { "name": "Department of the Premier and Cabinet", "color": "#005EB8" },
+      { "name": "Department of Justice",                 "color": "#005EB8" },
+      { "name": "Department of Transport and Main Roads","color": "#005EB8" },
+      { "name": "Queensland Health",                     "color": "#005EB8" }
+    ]
   },
-  {
-    "name": "West Moreton Health",
-    "logo": "west-moreton-health.png",
-    "sector": "health",
-    "tier": "featured",
-    "confirmed": false
-  },
-  {
-    "name": "Children's Health Queensland",
-    "logo": "childrens-health-queensland.png",
-    "sector": "health",
-    "tier": "featured",
-    "confirmed": false
-  },
-  {
-    "name": "Brisbane South PHN",
-    "logo": "brisbane-south-phn.png",
-    "sector": "health",
-    "tier": "standard",
-    "confirmed": false
-  },
-  {
-    "name": "Growlife Medical",
-    "logo": "growlife-medical.png",
-    "sector": "health",
-    "tier": "standard",
-    "confirmed": false
-  },
-  {
-    "name": "Lung Foundation Australia",
-    "logo": "lung-foundation-australia.png",
-    "sector": "health",
-    "tier": "standard",
-    "confirmed": false
-  },
-  {
-    "name": "Department of the Premier and Cabinet",
-    "logo": "dept-premier-cabinet.png",
-    "sector": "government",
-    "tier": "featured",
-    "confirmed": false
-  },
-  {
-    "name": "Department of Justice",
-    "logo": "dept-justice.png",
-    "sector": "government",
-    "tier": "standard",
-    "confirmed": false
-  },
-  {
-    "name": "Department of Transport and Main Roads",
-    "logo": "dept-transport.png",
-    "sector": "government",
-    "tier": "standard",
-    "confirmed": false
-  },
-  {
-    "name": "yourtown",
-    "logo": "yourtown.png",
-    "sector": "community",
-    "tier": "featured",
-    "confirmed": false
-  },
-  {
-    "name": "ARBRE",
-    "logo": "arbre.png",
-    "sector": "community",
-    "tier": "standard",
-    "confirmed": false
-  }
-]
+  "organisations": [
+    {
+      "name": "West Moreton Health",
+      "logo": "west-moreton-health.jpg",
+      "sector": "health",
+      "tier": "featured",
+      "confirmed": true
+    },
+    {
+      "name": "Children's Health Queensland",
+      "logo": "childrens-health-queensland.png",
+      "sector": "health",
+      "tier": "featured",
+      "confirmed": false
+    },
+    {
+      "name": "Brisbane South PHN",
+      "logo": "brisbane-south-phn.png",
+      "sector": "health",
+      "tier": "standard",
+      "confirmed": true
+    },
+    {
+      "name": "Growlife Medical",
+      "logo": "growlife-medical.png",
+      "sector": "health",
+      "tier": "standard",
+      "confirmed": true
+    },
+    {
+      "name": "Lung Foundation Australia",
+      "logo": "lung-foundation-australia.png",
+      "sector": "health",
+      "tier": "standard",
+      "confirmed": true
+    },
+    {
+      "name": "yourtown",
+      "logo": "yourtown.png",
+      "sector": "community",
+      "tier": "featured",
+      "confirmed": true
+    },
+    {
+      "name": "ARBRE",
+      "logo": "arbre.webp",
+      "sector": "community",
+      "tier": "standard",
+      "confirmed": true
+    }
+  ]
+}

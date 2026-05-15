@@ -535,6 +535,62 @@ h1 em, h2 em, h3 em, h4 em {
 .bg-moss .t-single cite { color: var(--color-stone); }
 
 /* ---- CLIENTS ---- */
+
+/* Queensland Government block */
+.qg-block {
+  background: var(--color-parchment);
+  border-radius: var(--r);
+  padding: 28px 32px;
+  margin-bottom: 16px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 32px;
+  align-items: center;
+}
+.qg-crest img {
+  height: 96px;
+  width: auto;
+  display: block;
+}
+.qg-departments {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.qg-label {
+  font-family: 'Noto Sans', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-slate);
+}
+.qg-dept-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.qg-dept-list li {
+  font-family: 'Noto Sans', system-ui, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+@media (max-width: 600px) {
+  .qg-block {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 24px;
+    text-align: center;
+  }
+  .qg-crest img { margin: 0 auto; height: 72px; }
+  .qg-dept-list { align-items: center; }
+  .qg-dept-list li { font-size: 15px; }
+}
+
 #clients-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
