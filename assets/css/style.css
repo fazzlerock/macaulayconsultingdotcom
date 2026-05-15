@@ -661,7 +661,7 @@ h1 em, h2 em, h3 em, h4 em {
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.4fr 1fr 1.4fr;
   gap: 56px;
   margin-bottom: 48px;
 }
@@ -673,6 +673,14 @@ h1 em, h2 em, h3 em, h4 em {
   display: block;
   margin-bottom: 16px;
 }
+.footer-descriptor {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: rgba(250,247,242,0.65);
+  line-height: 1.65;
+  margin: 0 0 20px;
+  max-width: 38ch;
+}
 .footer-contact { display: flex; flex-direction: column; gap: 6px; }
 .footer-contact a {
   font-family: var(--font-body);
@@ -681,6 +689,31 @@ h1 em, h2 em, h3 em, h4 em {
   transition: color var(--t);
 }
 .footer-contact a:hover { color: var(--color-cumquat); }
+.footer-col-label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(250,247,242,0.45);
+  margin-bottom: 16px;
+}
+.footer-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-nav a {
+  font-family: var(--font-body);
+  color: rgba(250,247,242,0.75);
+  font-size: 15px;
+  transition: color var(--t);
+}
+.footer-nav a:hover { color: var(--color-cumquat); }
 .footer-acknowledgement {
   font-family: var(--font-body);
   font-size: 14px;
@@ -688,6 +721,7 @@ h1 em, h2 em, h3 em, h4 em {
   color: rgba(250,247,242,0.55);
   line-height: 1.75;
   max-width: 46ch;
+  margin: 0;
 }
 .footer-bar {
   border-top: 1px solid rgba(250,247,242,0.1);
@@ -709,8 +743,13 @@ h1 em, h2 em, h3 em, h4 em {
   transition: color var(--t);
 }
 .footer-li:hover { color: var(--color-cumquat); }
+@media (max-width: 900px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .footer-col-acknowledgement { grid-column: 1 / -1; }
+}
 @media (max-width: 620px) {
   .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+  .footer-col-acknowledgement { grid-column: auto; }
 }
 
 /* ---- ABOUT: BIO PHOTO ---- */
