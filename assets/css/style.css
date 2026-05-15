@@ -578,6 +578,7 @@ h1 em, h2 em, h3 em, h4 em {
   font-size: 17px;
   font-weight: 600;
   line-height: 1.3;
+  white-space: nowrap;
 }
 @media (max-width: 600px) {
   .qg-block {
@@ -588,7 +589,7 @@ h1 em, h2 em, h3 em, h4 em {
   }
   .qg-crest img { margin: 0 auto; height: 72px; }
   .qg-dept-list { align-items: center; }
-  .qg-dept-list li { font-size: 15px; }
+  .qg-dept-list li { font-size: 15px; white-space: normal; }
 }
 
 #clients-grid {
