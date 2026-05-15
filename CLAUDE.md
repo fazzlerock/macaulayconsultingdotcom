@@ -32,6 +32,8 @@ Claude Code acts as the CMS: when content needs updating, edit the HTML files di
 │   │   ├── cm-consulting-logo.png
 │   │   ├── cm-consulting-logo-horizontal.png
 │   │   └── cm-consulting-logo-horizontal-monochrome.png
+│   ├── images/                 ← General site images
+│   │   └── portrait.webp       ← Caroline's headshot (About page)
 │   └── clients/                ← Client logo PNGs (referenced from clients.json)
 ├── clients.json                ← Client list — set confirmed:true to show logo on Home
 ├── _redirects                  ← Cloudflare Pages clean-URL rules
@@ -336,7 +338,7 @@ Uses [Web3Forms](https://web3forms.com). Free tier, no server required.
 ## Pending / placeholders
 
 - [ ] **Logo artwork** — improved versions of nav/footer wordmark needed; current logos (`assets/logos/`) have rendering issues at small sizes. Nav and footer currently use text wordmark fallback.
-- [ ] **Headshot** — place at `assets/caroline-macaulay.jpg` and uncomment the `<img>` tag in `about.html`
+- [x] **Headshot** — `assets/images/portrait.webp`, live on About page
 - [ ] **Web3Forms key** — enter `caro@consultcm.com.au` at web3forms.com, paste key into `contact.html`, remove `onsubmit="return false;"` and the "not yet active" notice
 - [ ] **Case study content** — 3–5 entries for `case-studies.html`; one placeholder (West Moreton Health) is drafted, 3 further placeholders await copy; Caroline to confirm West Moreton details before publishing
 - [ ] **Client logos** — PNG files for confirmed clients go in `assets/clients/`; set `"confirmed": true` in `clients.json` per client
