@@ -529,10 +529,13 @@ h1 em, h2 em, h3 em, h4 em {
 }
 .t-single cite::before { content: '— '; }
 
-/* Dark moss variant for t-single */
-.bg-moss .t-single-inner::before { color: rgba(255,255,255,0.18); }
-.bg-moss .t-single blockquote { color: var(--color-white); }
-.bg-moss .t-single cite { color: var(--color-stone); }
+/* Dark moss variant for t-single (matches either nested or combined classes) */
+.bg-moss .t-single-inner::before,
+.t-single.bg-moss .t-single-inner::before { color: rgba(255,255,255,0.18); }
+.bg-moss .t-single blockquote,
+.t-single.bg-moss blockquote { color: var(--color-white); }
+.bg-moss .t-single cite,
+.t-single.bg-moss cite { color: var(--color-stone); }
 
 /* ---- CLIENTS ---- */
 
