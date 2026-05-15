@@ -101,7 +101,6 @@ if (hamburger && mobileNav) {
           <img src="assets/clients/${qg.crest}" alt="${qg.label}">
         </div>
         <div class="qg-departments">
-          <span class="qg-label">${qg.label}</span>
           <ul class="qg-dept-list">${deptList}</ul>
         </div>
       </div>`;

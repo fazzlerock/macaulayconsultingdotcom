@@ -1,7 +1,7 @@
 {
   "queensland_government": {
     "label": "Queensland Government",
-    "crest": "queensland-government.svg",
+    "crest": "queensland-government.png",
     "departments": [
       { "name": "Department of the Premier and Cabinet", "color": "#005EB8" },
       { "name": "Department of Justice",                 "color": "#005EB8" },
