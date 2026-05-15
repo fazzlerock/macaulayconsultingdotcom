@@ -123,13 +123,17 @@ h1 em, h2 em, h3 em, h4 em {
   width: 100%;
 }
 .nav-logo {
-  font-family: var(--font-display);
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--color-text);
-  transition: color var(--t);
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  transition: opacity var(--t);
 }
-.nav-logo:hover { color: var(--color-cumquat); }
+.nav-logo img {
+  display: block;
+  height: 44px;
+  width: auto;
+}
+.nav-logo:hover { opacity: 0.78; }
 .nav-links {
   display: flex;
   align-items: center;
