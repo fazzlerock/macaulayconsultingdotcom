@@ -81,25 +81,50 @@ if (hamburger && mobileNav) {
 
 /* ---- CLIENTS ---- */
 (async function renderClients() {
-  const grid = document.getElementById('clients-grid');
-  if (!grid) return;
+  const display = document.getElementById('clients-display');
+  if (!display) return;
 
   try {
-    const res     = await fetch('clients.json');
-    const clients = await res.json();
+    const res  = await fetch('clients.json');
+    const data = await res.json();
 
-    grid.innerHTML = clients.map(client => {
-      if (client.confirmed && client.logo) {
-        return `<div class="client-item">
-          <img src="assets/clients/${client.logo}" alt="${client.name}" loading="lazy">
-        </div>`;
-      }
-      return `<div class="client-item client-item--placeholder">
-        <span>${client.name}</span>
+    let html = '';
+
+    /* Queensland Government block */
+    const qg = data.queensland_government;
+    if (qg && qg.departments && qg.departments.length) {
+      const deptList = qg.departments.map(d =>
+        `<li style="color:${d.color}">${d.name}</li>`
+      ).join('');
+      html += `<div class="qg-block">
+        <div class="qg-crest">
+          <img src="assets/clients/${qg.crest}" alt="${qg.label}">
+        </div>
+        <div class="qg-departments">
+          <span class="qg-label">${qg.label}</span>
+          <ul class="qg-dept-list">${deptList}</ul>
+        </div>
       </div>`;
-    }).join('');
+    }
+
+    /* Independent organisations grid */
+    const orgs = data.organisations || [];
+    if (orgs.length) {
+      const tiles = orgs.map(o => {
+        if (o.confirmed && o.logo) {
+          return `<div class="client-item">
+            <img src="assets/clients/${o.logo}" alt="${o.name}" loading="lazy">
+          </div>`;
+        }
+        return `<div class="client-item client-item--placeholder">
+          <span>${o.name}</span>
+        </div>`;
+      }).join('');
+      html += `<div id="clients-grid">${tiles}</div>`;
+    }
+
+    display.innerHTML = html;
   } catch (_) {
-    /* Hide the whole section gracefully if fetch fails */
     const section = document.querySelector('.clients-section');
     if (section) section.hidden = true;
   }
