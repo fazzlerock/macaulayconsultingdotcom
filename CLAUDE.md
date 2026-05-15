@@ -61,7 +61,7 @@ Claude Code acts as the CMS: when content needs updating, edit the HTML files di
 
 **To deploy:** push to `main`. Cloudflare Pages deploys automatically. Development work goes on a feature branch and is merged via pull request. Never push directly to `main`.
 
-**Clean URLs:** Cloudflare Pages serves `about.html` at `/about`, `status/index.html` at `/status`, etc. Always use clean URLs (no `.html`) in all internal links on the live site. The `_redirects` file handles any explicit redirect rules needed.
+**Clean URLs (external use only):** Cloudflare Pages serves `about.html` at `/about`, `status/index.html` at `/status`, etc., and the `_redirects` file ensures clean paths still resolve. However, **internal site links use relative paths with `.html`** (`about.html`, `services.html`, …), not absolute clean URLs. This is required for GitHub Pages previews and local previews to work, since those don't honour `_redirects`. Reserve clean URLs for things like canonical/og:url meta tags and external references (LinkedIn, business listings).
 
 ---
 
@@ -72,7 +72,7 @@ Because nav and footer markup is duplicated across pages, drift is easy. Before 
 - **Nav markup is identical** across all 7 pages (`index`, `about`, `services`, `case-studies`, `more-joy-at-work`, `contact`, `status/index`). The status page has a slimmed internal nav and uses `../` relative paths — its nav is intentionally different but its footer should match the public pages structurally.
 - **Footer markup is identical** across all public pages (links, descriptor, acknowledgement text, copyright year). The status page footer differs only in: (a) `../` relative paths in footer-nav links, and (b) `Internal reference — not for distribution.` copyright suffix.
 - **Copyright year** is current and consistent across all pages.
-- **Internal links use clean URLs** (no `.html`) on all public pages. Status page uses relative `../filename.html` paths because it's accessed locally as well as live.
+- **Internal links use relative paths with `.html`** (e.g. `about.html`) on the root-level pages. Status page uses `../about.html` style relative paths. No absolute clean URLs in nav, footer, or body links — they break GitHub Pages and local previews.
 - **All `<img>` tags have an `alt` attribute** (empty `alt=""` is acceptable for purely decorative images).
 - **All external links** carry `target="_blank" rel="noopener"`.
 - **Every public page has** `<meta name="description">`, the four core Open Graph tags (`og:type`, `og:url`, `og:title`, `og:description`), and `<meta name="last-updated" content="YYYY-MM-DD">`.
@@ -161,7 +161,7 @@ Consulting is a credence good: clients cannot evaluate quality until after the e
 - **JavaScript** goes in `assets/js/main.js` unless a page genuinely needs isolated script (e.g. the status page's fetch logic).
 - **No build tool** — header and footer HTML are duplicated across pages. When updating nav or footer, update every page.
 - **Relative asset paths** throughout — `assets/css/style.css` not `/assets/css/style.css`. This is required for GitHub Pages subdirectory compatibility.
-- **Internal links** use clean URLs: `/about`, `/services`, `/contact` etc. — no `.html` extensions.
+- **Internal links** use **relative paths with `.html`** (`about.html`, `services.html`, etc.) — not absolute clean URLs. This keeps the site working on GitHub Pages preview (which serves from a subdirectory) and local file:// previews. Cloudflare's `_redirects` still maps `/about` → `/about.html` for any external inbound links using clean URLs.
 - **`loading="lazy"`** on all images below the fold.
 - **`target="_blank" rel="noopener"`** on all external links.
 - **Australian English** spelling throughout all copy (e.g. organisation, programme, practitioner, honour).
