@@ -1129,6 +1129,24 @@ h1 em, h2 em, h3 em, h4 em {
 }
 .case-quote figcaption strong { color: var(--color-text); font-weight: 700; }
 .case-cta { margin-top: 32px; max-width: 64ch; }
+.case-image {
+  margin: 0 0 36px;
+  max-width: 320px;
+}
+.case-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.case-image figcaption {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 13px;
+  color: var(--color-slate);
+  margin-top: 10px;
+  line-height: 1.5;
+}
 
 /* ---- IMAGE BANNER ---- */
 .image-banner {
