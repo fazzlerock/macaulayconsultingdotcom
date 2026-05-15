@@ -86,6 +86,7 @@ Because nav and footer markup is duplicated across pages, drift is easy. Before 
 - **Internal-only pages** (`status/`, `visual-identity.html`, `font-options.html`) have `<meta name="robots" content="noindex, nofollow">`.
 - **`status/index.html` `PAGES` array** includes every public page (otherwise the status dashboard silently omits it).
 - **`_redirects`** has a clean-URL entry for every top-level public page.
+- **`seo_metadata.csv` is in sync with the live HTML.** When a page's `<title>`, `<meta name="description">`, `og:title`, `og:description`, `og:url` or `<meta name="last-updated">` changes, update the matching row in `seo_metadata.csv` in the same commit. The notes column should call out lengths that exceed search-engine display limits: **title >60 chars** (Google truncates around 55–60) and **description >160 chars** (Google truncates around 155–160). If a length issue can't be fixed in the same change, flag it in the notes column so it isn't lost.
 
 Quick sanity command to spot-check shared blocks:
 ```
