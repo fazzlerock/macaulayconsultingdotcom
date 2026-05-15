@@ -4,6 +4,9 @@ Static HTML website. No build tools, no frameworks — plain HTML, CSS, and JS, 
 
 Claude Code acts as the CMS: when content needs updating, edit the HTML files directly and push to deploy.
 
+**Source of truth for all page copy:** `content_copy.md`
+**Source of truth for SEO metadata:** `seo_metadata.csv`
+
 ---
 
 ## File structure
@@ -39,7 +42,7 @@ Claude Code acts as the CMS: when content needs updating, edit the HTML files di
 
 ## Working with this project
 
-**To update content:** edit the relevant `.html` file directly. When editing a page's content (body copy, headings, links — not just nav, footer, or structural/CSS changes shared across pages), also update `<meta name="last-updated" content="YYYY-MM-DD">` in that page's `<head>` to today's date.
+**To update content:** refer to `content_copy.md` for the correct copy, then edit the relevant `.html` file directly. When editing a page's content (body copy, headings, links — not just nav, footer, or structural/CSS changes shared across pages), also update `<meta name="last-updated" content="YYYY-MM-DD">` in that page's `<head>` to today's date.
 
 **To add a page:**
 1. Create a new `.html` file in the appropriate location.
@@ -60,7 +63,70 @@ Claude Code acts as the CMS: when content needs updating, edit the HTML files di
 
 ---
 
-## Conventions
+## Effectiveness standards
+
+These principles govern every development and content decision on this site. Macaulay Consulting is a credence-good business (clients cannot easily evaluate quality before engaging), so trust-building is the primary purpose of the website.
+
+### Site purpose and target audience
+
+**Primary purpose:** Convert visitors from health and public sector organisations into enquiries (phone call or contact form).
+
+**Target audience:** Senior leaders, programme managers and procurement decision-makers in Queensland Health, other health agencies, government departments, and community sector organisations. Typically time-poor, risk-aware, and evaluating multiple options.
+
+**Core user scenarios to keep in mind when making any change:**
+1. A Health Executive searches for a facilitator for a leadership away-day and lands on the homepage — can they understand what Caroline does, assess her credibility, and find a contact path within 30 seconds?
+2. A programme manager who has heard Caroline's name searches for her — does the About page give them enough to advocate for her internally?
+3. A potential client on a mobile device wants to get in touch quickly — can they reach a phone number or form within two taps?
+
+---
+
+### Usability standards
+
+- **Navigation must be visible and consistent on every page** — the fixed nav bar satisfies this; do not remove or obscure it.
+- **Maximum 3 clicks to contact** — Home → Contact and Home → any service → Contact are the critical paths. Do not add friction.
+- **No visible placeholders on public pages** — "coming soon", "under construction", and empty sections signal unprofessionalism and destroy trust. If content is not ready, the section should not be visible to the public. Use HTML comments to hold placeholder notes for internal reference only.
+- **No broken links or missing images** — before any deployment, verify all internal links resolve and all `<img>` tags have accessible sources.
+
+---
+
+### Trust signals — what this site must communicate
+
+Consulting is a credence good: clients cannot evaluate quality until after the engagement. The site's job is to make the trust decision as easy as possible across three dimensions:
+
+**Emotional trust** — "I feel comfortable with this person"
+- Caroline's headshot is the highest-priority missing asset on the site; its absence is the single biggest trust gap. Once supplied, place it prominently on the About page and consider a smaller version on the Home intro section.
+- Testimonials (already present) carry significant weight — add new ones as engagements are completed.
+- The warm, editorial visual style (Cormorant Garamond, parchment tones) signals sophistication and care; maintain this standard in all new sections.
+
+**Rational trust** — "This person has the credentials and track record"
+- Credentials section in About is already present — keep it current.
+- Case studies are the most underdeveloped trust element; prioritise completing them as Caroline's first content contribution.
+- Client logos (once confirmed) provide instant sector credibility — activate them as soon as logo files are available.
+
+**Institutional trust** — "There are structural assurances here"
+- A privacy policy page is pending — add it before the site goes live publicly; place a footer link to it on every page.
+- Contact details (phone and email) must remain visible in the footer and on the Contact page at all times — they are a structural trust signal.
+- The contact form's "not yet active" notice should be removed as soon as the Web3Forms key is in place; a non-functional form is worse than no form.
+
+---
+
+### Interactivity
+
+- The contact form is the primary two-way channel — activating it is a priority.
+- LinkedIn is the secondary channel; the link is present in nav and footer on all pages.
+- As the business matures, consider adding a simple enquiry-type selector to the contact form (e.g. "What are you enquiring about?" dropdown) to help Caroline triage responses.
+
+---
+
+### Sector-specific guidance
+
+- This is a **B2B consulting** site. Avoid entertainment-oriented features (animations, gamification, decorative interactions). Every feature should serve a utilitarian purpose: helping the visitor find information, assess credibility, or make contact.
+- Do not add features that prioritise visual novelty over clarity. Sophistication here means restraint, not complexity.
+- When adding new content, ask: does this help a decision-maker trust Caroline enough to pick up the phone? If not, it does not belong on the site.
+
+---
+
+
 
 - **One stylesheet:** `assets/css/style.css` — do not create additional CSS files.
 - **CSS custom properties** defined in `:root` — always use them for colours, never hardcoded hex values.
