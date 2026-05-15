@@ -65,6 +65,32 @@ Claude Code acts as the CMS: when content needs updating, edit the HTML files di
 
 ---
 
+## Pre-merge consistency checks
+
+Because nav and footer markup is duplicated across pages, drift is easy. Before merging any PR that touches shared structure (nav, footer, head meta, or anything that should appear on every page), verify:
+
+- **Nav markup is identical** across all 7 pages (`index`, `about`, `services`, `case-studies`, `more-joy-at-work`, `contact`, `status/index`). The status page has a slimmed internal nav and uses `../` relative paths — its nav is intentionally different but its footer should match the public pages structurally.
+- **Footer markup is identical** across all public pages (links, descriptor, acknowledgement text, copyright year). The status page footer differs only in: (a) `../` relative paths in footer-nav links, and (b) `Internal reference — not for distribution.` copyright suffix.
+- **Copyright year** is current and consistent across all pages.
+- **Internal links use clean URLs** (no `.html`) on all public pages. Status page uses relative `../filename.html` paths because it's accessed locally as well as live.
+- **All `<img>` tags have an `alt` attribute** (empty `alt=""` is acceptable for purely decorative images).
+- **All external links** carry `target="_blank" rel="noopener"`.
+- **Every public page has** `<meta name="description">`, the four core Open Graph tags (`og:type`, `og:url`, `og:title`, `og:description`), and `<meta name="last-updated" content="YYYY-MM-DD">`.
+- **Internal-only pages** (`status/`, `visual-identity.html`, `font-options.html`) have `<meta name="robots" content="noindex, nofollow">`.
+- **`status/index.html` `PAGES` array** includes every public page (otherwise the status dashboard silently omits it).
+- **`_redirects`** has a clean-URL entry for every top-level public page.
+
+Quick sanity command to spot-check shared blocks:
+```
+grep -c "footer-descriptor" *.html status/index.html   # should be 1 on every line
+grep -c "footer-col-nav"    *.html status/index.html   # should be 1 on every line
+grep -E "© 20[0-9]{2}"      *.html status/index.html   # all should be current year
+```
+
+When in doubt, diff the nav block (between `<nav` and `</nav>`) and the footer block (between `<footer` and `</footer>`) between `index.html` and each other page — they should be byte-identical for the public pages.
+
+---
+
 ## Effectiveness standards
 
 These principles govern every development and content decision on this site. Macaulay Consulting is a credence-good business (clients cannot easily evaluate quality before engaging), so trust-building is the primary purpose of the website.
