@@ -13,31 +13,38 @@ Claude Code acts as the CMS: when content needs updating, edit the HTML files di
 
 ```
 /
-├── index.html                  ← Home (/)
-├── about.html                  ← /about
-├── services.html               ← /services
-├── case-studies.html           ← /case-studies
-├── more-joy-at-work.html       ← /more-joy-at-work
-├── contact.html                ← /contact
-├── visual-identity.html        ← Visual identity reference (internal — not in public nav)
-├── font-options.html           ← Scratch file (internal — ignore)
+├── index.html                              ← Home (/)
+├── about.html                              ← /about
+├── services.html                           ← /services
+├── case-studies.html                       ← /case-studies
+├── more-joy-at-work.html                   ← /more-joy-at-work
+├── contact.html                            ← /contact
+├── visual-identity.html                    ← Visual identity reference (internal — not in public nav)
+├── font-options.html                       ← Scratch file (internal — ignore)
 ├── status/
-│   └── index.html              ← /status (noindex — not in public nav)
+│   └── index.html                          ← /status (noindex — not in public nav)
 ├── assets/
 │   ├── css/
-│   │   └── style.css           ← Single stylesheet — all styles go here
+│   │   └── style.css                       ← Single stylesheet — all styles go here
 │   ├── js/
-│   │   └── main.js             ← Site-wide JS
-│   ├── logos/                  ← Brand logo PNGs
+│   │   └── main.js                         ← Site-wide JS
+│   ├── logos/                              ← Brand logo PNGs
 │   │   ├── cm-consulting-logo.png
-│   │   ├── cm-consulting-logo-horizontal.png
+│   │   ├── cm-consulting-logo-horizontal.png            ← Live in nav on all pages
 │   │   └── cm-consulting-logo-horizontal-monochrome.png
-│   ├── images/                 ← General site images
-│   │   └── portrait.webp       ← Caroline's headshot (About page)
-│   └── clients/                ← Client logo PNGs (referenced from clients.json)
-├── clients.json                ← Client list — set confirmed:true to show logo on Home
-├── _redirects                  ← Cloudflare Pages clean-URL rules
-└── _headers                    ← Cloudflare Pages HTTP header rules
+│   ├── images/                             ← General site images
+│   │   ├── portrait.webp                                ← Caroline's headshot (About page)
+│   │   ├── small-group-session.webp                     ← Services lead image
+│   │   ├── workshop-lead.webp                           ← More Joy at Work page
+│   │   └── your-town-engagement-strategy.webp           ← yourtown case study
+│   └── clients/                            ← Client logo files (referenced from clients.json)
+├── clients.json                            ← Client list — set confirmed:true to show logo on Home
+├── content_copy.md                         ← Source of truth for all page copy
+├── seo_metadata.csv                        ← Source of truth for per-page SEO metadata
+├── draft_policies.md                       ← Draft privacy / engagement terms for Caroline's review (internal — not published)
+├── CLAUDE.md                               ← This file — project guide for Claude Code
+├── _redirects                              ← Cloudflare Pages clean-URL rules
+└── _headers                                ← Cloudflare Pages HTTP header rules
 ```
 
 ---
