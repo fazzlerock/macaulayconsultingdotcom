@@ -693,6 +693,22 @@ h1 em, h2 em, h3 em, h4 em {
   transition: color var(--t);
 }
 .footer-contact a:hover { color: var(--color-cumquat); }
+.footer-affiliation {
+  margin: 20px 0 0;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-style: italic;
+  color: rgba(250,247,242,0.55);
+}
+.footer-affiliation a {
+  color: rgba(250,247,242,0.75);
+  border-bottom: 1px solid rgba(250,247,242,0.25);
+  transition: color var(--t), border-color var(--t);
+}
+.footer-affiliation a:hover {
+  color: var(--color-cumquat);
+  border-bottom-color: var(--color-cumquat);
+}
 .footer-col-label {
   display: block;
   font-family: var(--font-body);
@@ -1129,6 +1145,45 @@ h1 em, h2 em, h3 em, h4 em {
 }
 .case-quote figcaption strong { color: var(--color-text); font-weight: 700; }
 .case-cta { margin-top: 32px; max-width: 64ch; }
+.case-image {
+  margin: 0 0 36px;
+  max-width: 320px;
+}
+.case-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.case-image figcaption {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 13px;
+  color: var(--color-slate);
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* ---- IMAGE BANNER ---- */
+.image-banner {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0;
+}
+.image-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.image-banner figcaption {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--color-slate);
+  text-align: center;
+  margin-top: 14px;
+}
 
 /* ---- DIVIDER / RULE ---- */
 .stone-rule {
