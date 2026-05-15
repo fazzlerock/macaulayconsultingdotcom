@@ -1,12 +1,13 @@
 {
   "queensland_government": {
     "label": "Queensland Government",
-    "crest": "queensland-government.svg",
+    "crest": "queensland-government.png",
     "departments": [
       { "name": "Department of the Premier and Cabinet", "color": "#005EB8" },
       { "name": "Department of Justice",                 "color": "#005EB8" },
       { "name": "Department of Transport and Main Roads","color": "#005EB8" },
-      { "name": "Queensland Health",                     "color": "#005EB8" }
+      { "name": "Queensland Health",                     "color": "#005EB8" },
+      { "name": "Children's Health Queensland",          "color": "#76BC21" }
     ]
   },
   "organisations": [
@@ -16,13 +17,6 @@
       "sector": "health",
       "tier": "featured",
       "confirmed": true
-    },
-    {
-      "name": "Children's Health Queensland",
-      "logo": "childrens-health-queensland.png",
-      "sector": "health",
-      "tier": "featured",
-      "confirmed": false
     },
     {
       "name": "Brisbane South PHN",

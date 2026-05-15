@@ -578,6 +578,7 @@ h1 em, h2 em, h3 em, h4 em {
   font-size: 17px;
   font-weight: 600;
   line-height: 1.3;
+  white-space: nowrap;
 }
 @media (max-width: 600px) {
   .qg-block {
@@ -588,19 +589,19 @@ h1 em, h2 em, h3 em, h4 em {
   }
   .qg-crest img { margin: 0 auto; height: 72px; }
   .qg-dept-list { align-items: center; }
-  .qg-dept-list li { font-size: 15px; }
+  .qg-dept-list li { font-size: 15px; white-space: normal; }
 }
 
 #clients-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
 }
 .client-item {
   background: var(--color-parchment);
   border-radius: var(--r);
-  padding: 16px 20px;
-  min-height: 72px;
+  padding: 24px 28px;
+  min-height: 160px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -609,7 +610,7 @@ h1 em, h2 em, h3 em, h4 em {
 }
 .client-item:hover { background: var(--color-linen); }
 .client-item img {
-  max-height: 44px; width: auto; object-fit: contain;
+  max-height: 110px; max-width: 100%; width: auto; object-fit: contain;
   filter: grayscale(1) opacity(0.6);
   transition: filter 0.3s ease;
 }
