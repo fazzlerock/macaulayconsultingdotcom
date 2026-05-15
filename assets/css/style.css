@@ -693,6 +693,22 @@ h1 em, h2 em, h3 em, h4 em {
   transition: color var(--t);
 }
 .footer-contact a:hover { color: var(--color-cumquat); }
+.footer-affiliation {
+  margin: 20px 0 0;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-style: italic;
+  color: rgba(250,247,242,0.55);
+}
+.footer-affiliation a {
+  color: rgba(250,247,242,0.75);
+  border-bottom: 1px solid rgba(250,247,242,0.25);
+  transition: color var(--t), border-color var(--t);
+}
+.footer-affiliation a:hover {
+  color: var(--color-cumquat);
+  border-bottom-color: var(--color-cumquat);
+}
 .footer-col-label {
   display: block;
   font-family: var(--font-body);
