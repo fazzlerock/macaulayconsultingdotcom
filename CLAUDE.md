@@ -13,31 +13,38 @@ Claude Code acts as the CMS: when content needs updating, edit the HTML files di
 
 ```
 /
-├── index.html                  ← Home (/)
-├── about.html                  ← /about
-├── services.html               ← /services
-├── case-studies.html           ← /case-studies
-├── more-joy-at-work.html       ← /more-joy-at-work
-├── contact.html                ← /contact
-├── visual-identity.html        ← Visual identity reference (internal — not in public nav)
-├── font-options.html           ← Scratch file (internal — ignore)
+├── index.html                              ← Home (/)
+├── about.html                              ← /about
+├── services.html                           ← /services
+├── case-studies.html                       ← /case-studies
+├── more-joy-at-work.html                   ← /more-joy-at-work
+├── contact.html                            ← /contact
+├── visual-identity.html                    ← Visual identity reference (internal — not in public nav)
+├── font-options.html                       ← Scratch file (internal — ignore)
 ├── status/
-│   └── index.html              ← /status (noindex — not in public nav)
+│   └── index.html                          ← /status (noindex — not in public nav)
 ├── assets/
 │   ├── css/
-│   │   └── style.css           ← Single stylesheet — all styles go here
+│   │   └── style.css                       ← Single stylesheet — all styles go here
 │   ├── js/
-│   │   └── main.js             ← Site-wide JS
-│   ├── logos/                  ← Brand logo PNGs
+│   │   └── main.js                         ← Site-wide JS
+│   ├── logos/                              ← Brand logo PNGs
 │   │   ├── cm-consulting-logo.png
-│   │   ├── cm-consulting-logo-horizontal.png
+│   │   ├── cm-consulting-logo-horizontal.png            ← Live in nav on all pages
 │   │   └── cm-consulting-logo-horizontal-monochrome.png
-│   ├── images/                 ← General site images
-│   │   └── portrait.webp       ← Caroline's headshot (About page)
-│   └── clients/                ← Client logo PNGs (referenced from clients.json)
-├── clients.json                ← Client list — set confirmed:true to show logo on Home
-├── _redirects                  ← Cloudflare Pages clean-URL rules
-└── _headers                    ← Cloudflare Pages HTTP header rules
+│   ├── images/                             ← General site images
+│   │   ├── portrait.webp                                ← Caroline's headshot (About page)
+│   │   ├── small-group-session.webp                     ← Services lead image
+│   │   ├── workshop-lead.webp                           ← More Joy at Work page
+│   │   └── your-town-engagement-strategy.webp           ← yourtown case study
+│   └── clients/                            ← Client logo files (referenced from clients.json)
+├── clients.json                            ← Client list — set confirmed:true to show logo on Home
+├── content_copy.md                         ← Source of truth for all page copy
+├── seo_metadata.csv                        ← Source of truth for per-page SEO metadata
+├── draft_policies.md                       ← Draft privacy / engagement terms for Caroline's review (internal — not published)
+├── CLAUDE.md                               ← This file — project guide for Claude Code
+├── _redirects                              ← Cloudflare Pages clean-URL rules
+└── _headers                                ← Cloudflare Pages HTTP header rules
 ```
 
 ---
@@ -122,8 +129,9 @@ These principles govern every development and content decision on this site. Mac
 Consulting is a credence good: clients cannot evaluate quality until after the engagement. The site's job is to make the trust decision as easy as possible across three dimensions:
 
 **Emotional trust** — "I feel comfortable with this person"
-- Caroline's headshot is the highest-priority missing asset on the site; its absence is the single biggest trust gap. Once supplied, place it prominently on the About page and consider a smaller version on the Home intro section.
+- Caroline's headshot is live on the About page (`assets/images/portrait.webp`) and is the page's strongest emotional anchor. Consider adding a smaller version to the Home intro section if a suitable crop is available.
 - Testimonials (already present) carry significant weight — add new ones as engagements are completed.
+- Workshop imagery (`small-group-session.webp` on Services, `workshop-lead.webp` on More Joy) shows the work in action and supports the editorial visual style.
 - The warm, editorial visual style (Cormorant Garamond, parchment tones) signals sophistication and care; maintain this standard in all new sections.
 
 **Rational trust** — "This person has the credentials and track record"
@@ -154,7 +162,7 @@ Consulting is a credence good: clients cannot evaluate quality until after the e
 
 ---
 
-
+## Code conventions
 
 - **One stylesheet:** `assets/css/style.css` — do not create additional CSS files.
 - **CSS custom properties** defined in `:root` — always use them for colours, never hardcoded hex values.
@@ -255,16 +263,20 @@ Rendered in cumquat, italic Lora, 13px, uppercase letter-spacing.
 
 ### Footer
 - Background: `--color-moss-dark` (`#1E2C24`)
-- Two-column grid: logo + contact on left, acknowledgement of country on right
+- Three-column grid (`.footer-grid`, `1.4fr 1fr 1.4fr`):
+  - `.footer-col-brand` — wordmark, `.footer-descriptor`, `.footer-contact` (email + phone), `.footer-affiliation` ("Member of the Clarity Consortium")
+  - `.footer-col-nav` — `.footer-col-label` ("Navigate") + `.footer-nav` list (About, Services, Case Studies, More Joy at Work, Contact)
+  - `.footer-col-acknowledgement` — `.footer-col-label` + `.footer-acknowledgement`
+- Folds to 2 columns at 900px (acknowledgement spans full width), single column at 620px
 - `.footer-bar` at bottom: flex, `justify-content: space-between`
   - Left: `.footer-copy` (copyright)
   - Centre: `.footer-li` (LinkedIn icon, public pages only)
   - Right: `.footer-updated` — injected at runtime by `main.js` from `<meta name="last-updated">`
 
-### Testimonial carousel (Home, `.t-carousel`)
-- Slides fade in/out with JS; dots navigate manually
+### Testimonial carousel (`.t-carousel`)
+- Slides fade in/out with JS; dots navigate manually. JS finds slides/dots via `querySelectorAll`, so any slide count works.
 - On moss background: white quote text, stone attribution
-- `t-single` / `.t-single-inner` — used for a single static quote (e.g. More Joy page)
+- Carousels appear inside a `.t-single` section wrapper (legacy class name retained). The Services page uses `.t-single-inner` for a static single-quote layout; Home and More Joy use `.t-carousel` inside the same wrapper.
 
 ### Cards
 - Workshop cards (Home): white bg, stone border, `border-radius: 4px`, lift on hover (`translateY(-4px)`)
@@ -285,7 +297,7 @@ Rendered in cumquat, italic Lora, 13px, uppercase letter-spacing.
 7. LinkedIn icon → external, `target="_blank" rel="noopener"`
 
 ### Footer nav
-No formal footer nav columns. Footer contains: logo, phone, email, country acknowledgement, LinkedIn icon, copyright, last-updated date.
+Three-column footer: brand column (logo, descriptor, email, phone, Clarity Consortium affiliation), Navigate column (mirrors primary nav minus Home), and Acknowledgement of Country column. Bottom bar carries the copyright, LinkedIn icon (public pages only), and the runtime-injected "Updated [date]".
 
 ### Internal reference pages (not in nav)
 - `/visual-identity` — living style guide, links to live stylesheet
@@ -309,9 +321,9 @@ Each entry:
 ```
 
 - `confirmed: false` → renders organisation name as text placeholder
-- `confirmed: true` → renders the PNG from `assets/clients/[logo]`
+- `confirmed: true` → renders the image from `assets/clients/[logo]`
 
-Logo PNGs should be square or landscape, transparent background, greyscale or dark preferred (CSS applies `filter: grayscale(1) opacity(0.6)` which lifts on hover).
+Logo files can be `.png`, `.svg`, `.webp` or `.jpg` (current folder mixes all four). Square or landscape, transparent or white background, greyscale or dark colour preferred — CSS applies `filter: grayscale(1) opacity(0.6)` which lifts on hover.
 
 ---
 
@@ -321,9 +333,11 @@ Logo PNGs should be square or landscape, transparent background, greyscale or da
 
 ### Meta tags — every page needs
 - `<meta name="description">` — unique per page, 150–160 characters
-- Open Graph: `og:type`, `og:url`, `og:title`, `og:description`, `og:image`
+- Open Graph: `og:type`, `og:url`, `og:title`, `og:description` (the four currently present on every page)
 - `<meta name="last-updated" content="YYYY-MM-DD">` — update when content changes
 - Internal reference pages also need: `<meta name="robots" content="noindex, nofollow">`
+
+`og:image` is **not** currently set on any page. When a canonical preview image is ready (a wide crop of `portrait.webp` or a workshop image with the wordmark, hosted at a stable URL), add it to every page's `<head>` so social link previews on LinkedIn, Facebook and Slack render with a visual.
 
 ### Schema.org JSON-LD (Home page)
 ```json
@@ -372,5 +386,6 @@ Uses [Web3Forms](https://web3forms.com). Free tier, no server required.
 - [ ] **Client logos** — PNG files for confirmed clients go in `assets/clients/`; set `"confirmed": true` in `clients.json` per client
 - [ ] **More Joy at Work programme phases** — Caroline to review phase names, sequence and descriptions in `more-joy-at-work.html`
 - [ ] **Video embed** — add YouTube/Vimeo URL in `more-joy-at-work.html` once content is published; replace the placeholder block
+- [ ] **`og:image` for link previews** — no canonical preview image is set. Choose one (wide crop of `portrait.webp` or a workshop image with the wordmark), upload to a stable URL, and add `<meta property="og:image" content="...">` to every public page's `<head>`.
 - [ ] **Google Business Profile** — set up once `consultcm.com.au` is live
 - [ ] **Social links beyond LinkedIn** — add if/when other channels are established
