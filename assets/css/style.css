@@ -1107,6 +1107,28 @@ h1 em, h2 em, h3 em, h4 em {
   color: var(--color-text-light);
   max-width: 64ch;
 }
+.case-quote {
+  margin: 40px 0 0;
+  padding: 4px 0 4px 28px;
+  border-left: 3px solid var(--color-cumquat);
+  max-width: 64ch;
+}
+.case-quote blockquote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(20px, 2.4vw, 26px);
+  line-height: 1.4;
+  color: var(--color-text);
+  margin: 0 0 14px;
+}
+.case-quote figcaption {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-slate);
+}
+.case-quote figcaption strong { color: var(--color-text); font-weight: 700; }
+.case-cta { margin-top: 32px; max-width: 64ch; }
 
 /* ---- DIVIDER / RULE ---- */
 .stone-rule {
