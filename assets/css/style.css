@@ -1130,6 +1130,27 @@ h1 em, h2 em, h3 em, h4 em {
 .case-quote figcaption strong { color: var(--color-text); font-weight: 700; }
 .case-cta { margin-top: 32px; max-width: 64ch; }
 
+/* ---- IMAGE BANNER ---- */
+.image-banner {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0;
+}
+.image-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.image-banner figcaption {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--color-slate);
+  text-align: center;
+  margin-top: 14px;
+}
+
 /* ---- DIVIDER / RULE ---- */
 .stone-rule {
   height: 1px;
