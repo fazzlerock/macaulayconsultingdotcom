@@ -363,10 +363,12 @@ Uses [Web3Forms](https://web3forms.com). Free tier, no server required.
 
 ## Pending / placeholders
 
-- [ ] **Logo artwork** — improved versions of nav/footer wordmark needed; current logos (`assets/logos/`) have rendering issues at small sizes. Nav and footer currently use text wordmark fallback.
+- [x] **Logo artwork — horizontal nav lockup** — `assets/logos/cm-consulting-logo-horizontal.png` (RGBA, transparent background) is live in the nav on all pages.
+- [ ] **Logo artwork — footer/dark variant** — the current horizontal logo is dark green and orange, so it disappears on the footer's moss-dark background. Footer still uses the text wordmark. Needs a parchment/cream version on transparent background (RGB green is `42, 59, 48` / `#2A3B30`; orange is `#E07828`).
 - [x] **Headshot** — `assets/images/portrait.webp`, live on About page
+- [x] **Site imagery** — `small-group-session.webp` (services), `workshop-lead.webp` (More Joy), `your-town-engagement-strategy.webp` (case studies) are live
 - [ ] **Web3Forms key** — enter `caro@consultcm.com.au` at web3forms.com, paste key into `contact.html`, remove `onsubmit="return false;"` and the "not yet active" notice
-- [ ] **Case study content** — 3–5 entries for `case-studies.html`; one placeholder (West Moreton Health) is drafted, 3 further placeholders await copy; Caroline to confirm West Moreton details before publishing
+- [ ] **Case study content** — West Moreton Health and yourtown are drafted with attributed testimonials; both need Caroline's confirmation of the situation/approach/outcome detail before publishing. 2 further placeholder slots remain in `case-studies.html` (HTML comments) for additional case studies.
 - [ ] **Client logos** — PNG files for confirmed clients go in `assets/clients/`; set `"confirmed": true` in `clients.json` per client
 - [ ] **More Joy at Work programme phases** — Caroline to review phase names, sequence and descriptions in `more-joy-at-work.html`
 - [ ] **Video embed** — add YouTube/Vimeo URL in `more-joy-at-work.html` once content is published; replace the placeholder block

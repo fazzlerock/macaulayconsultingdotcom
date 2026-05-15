@@ -8,11 +8,25 @@ This file is the source of truth for all page copy on the Macaulay Consulting we
 
 ## Global elements
 
-### Footer acknowledgement of country
+### Footer — brand column
+**Wordmark:** Macaulay Consulting
+
+**Descriptor:** Facilitation and strategy consulting for health and public sector organisations. Based in Brisbane (Meanjin).
+
+**Contact:** caro@consultcm.com.au · +61 404 014 117
+
+**Affiliation line:** *Member of the [Clarity Consortium](https://clarityconsortium.com.au/)*
+
+### Footer — Navigate column
+About · Services · Case Studies · More Joy at Work · Contact
+
+### Footer — Acknowledgement of Country column
 > Macaulay Consulting acknowledges the Traditional Custodians of the lands on which we work, the Turrbal and Jagera peoples of Meanjin (Brisbane), and pays respect to Elders past and present.
 
-### Footer copyright
-© 2025 Macaulay Consulting. All rights reserved.
+### Footer — bottom bar
+© 2026 Macaulay Consulting. All rights reserved. · LinkedIn icon · "Updated [date]" (injected at runtime from each page's `<meta name="last-updated">`)
+
+*Status page footer carries the suffix:* `Internal reference — not for distribution.`
 
 ### Contact details (used across all pages)
 - **Phone:** +61 404 014 117
@@ -96,7 +110,7 @@ A structured team culture programme built on emotional culture research and neur
 *Zoe — Youth Advisory Member, yourtown*
 
 **Testimonial 2**
-> "Caroline facilitated a workshop with my unit and carefully constructed and worked with us to unpack and redefine our purpose, culture and emotions. It was a warm, well-paced workshop, and many of the team came out of it with a renewed sense of belonging and purpose."
+> "Caroline facilitated a workshop with my unit and carefully constructed and worked with us to unpack and redefine our purpose, culture and emotions. It was a warm, well-paced workshop, and many of the team came out of it with a renewed sense of belonging and purpose. I would recommend Caro to anyone doing a culture shift piece with their teams!"
 
 *Belinda Lewis — Senior Director, Queensland Health*
 
@@ -104,6 +118,11 @@ A structured team culture programme built on emotional culture research and neur
 > "The best facilitation I've witnessed — so genuine."
 
 *Workshop Participant — Social Policy Team Planning Day, Queensland Health*
+
+**Testimonial 4**
+> "I've been to a lot of workshops, but this was workshop perfection."
+
+*Workshop Participant — Inclusion and Access Strategy Workshop, Qld Department of Transport and Main Roads*
 
 ---
 
@@ -138,7 +157,7 @@ Every engagement begins with a no-obligation call. Tell Caroline what you're wor
 
 ### Biography
 
-**Photo:** `[PLACEHOLDER — place headshot at assets/caroline-macaulay.jpg and uncomment the img tag in about.html]`
+**Photo:** `assets/images/portrait.webp` (live)
 
 Caroline Macaulay spent fifteen years as a speech pathologist, working with children, young people and families to help them find and use their voice. That experience seeded everything that followed: a deep belief in the power of connection, a commitment to listening before acting, and a conviction that systems should empower people rather than diminish them.
 
@@ -161,6 +180,19 @@ Her work spans Queensland Health, West Moreton Health, Children's Health Queensl
 - **Emotional Culture Practitioner** — The Emotional Culture Deck
 - **i4 Neuro-Leadership Trainer** *(in progress)* — About My Brain Institute
 - **Psychological Safety and Care Practitioner** — The Leaders Lab
+
+---
+
+### Affiliations
+**Eyebrow:** Affiliations
+
+**Heading:** Part of the *Clarity Consortium*
+
+Caroline is one of nine seasoned consultants who form the [Clarity Consortium](https://clarityconsortium.com.au/) — an Australian collaboration established in 2018. Each member runs an independent consultancy in their own specialist field, and together the group submits joint proposals on larger pieces of work that benefit from a broader range of expertise.
+
+The consortium operates on principles of integrity, quality, flexibility and professional generosity. For clients, it means that engaging Macaulay Consulting can also unlock the wider experience of the group when the work calls for it.
+
+*Rendered on bg-cumquat-pale to give the section a warm accent within the page flow.*
 
 ---
 
@@ -203,6 +235,11 @@ The best way is a conversation. No pitch, no pressure.
 **Heading:** From good intentions to *effective action.*
 
 **Subheading:** A range of services designed around your needs and context — not a standard methodology.
+
+---
+
+### Lead image
+`assets/images/small-group-session.webp` — Caroline facilitating a small-group strategic planning session at a round table. Sits between hero and Service 01 as a full-width banner.
 
 ---
 
@@ -362,11 +399,40 @@ Caroline designed and facilitated a series of workshops for the West Moreton lea
 The workshops combined structured strategic conversation with practical planning tools, creating a process that was both substantive and energising.
 
 **The outcome**
-The leadership team achieved the clarity and alignment they needed, with a shared understanding of priorities and a practical plan for the changes ahead. The Executive Director noted that Caroline helped "pave the way for important changes ahead in our health service" and that the team "achieved the results we needed in a really positive way."
+The leadership team achieved the clarity and alignment they needed, with a shared understanding of priorities and a practical plan for the changes ahead.
+
+**Pull-quote**
+> "Caroline helped us pave the way for important changes ahead in our health service. She designed workshops that engaged everyone in the room, and kept us focussed on the key issues. With her help, we achieved the results we needed in a really positive way."
+
+*Therese Hayes — Executive Director, West Moreton Hospital and Health Service*
+
+**CTA link:** Learn more about Strategic Planning and Facilitation → /services#strategy
 
 ---
 
-### Case Study 2 `[PLACEHOLDER — awaiting content from Caroline]`
+### Case Study 2 — yourtown *(draft — awaiting Caroline's confirmation)*
+
+**Image:** `assets/images/your-town-engagement-strategy.webp` — Recognition at Queensland Child Protection Week for the yourtown youth engagement strategy.
+
+**Meta:** Co-design and Facilitation · yourtown
+
+**Heading:** A youth strategy shaped by young people
+
+**The situation**
+yourtown wanted to develop a youth strategy that genuinely reflected the perspectives, priorities and lived experience of the young people the organisation exists to support — not just the assumptions of those working with them.
+
+**What we did**
+Caroline facilitated a co-design process that placed young people at the centre. Working alongside the yourtown Youth Advisory group and the organisation's leadership, she designed sessions that built trust, made space for honest contribution, and translated lived experience into strategic direction.
+
+**The outcome**
+The strategy was shaped, tested and endorsed by the young people it was designed to serve, giving yourtown a foundation for its youth work that carries real authority because it was built with the people closest to the work.
+
+**Pull-quote**
+> "The youth strategy would not have been possible without your skilled facilitation and commitment to listening to, engaging with and empowering young people."
+
+*Zoe — Youth Advisory Member, yourtown*
+
+**CTA link:** Learn more about Co-design → /services#codesign
 
 ---
 
@@ -448,10 +514,22 @@ Caroline shares short videos on the research, thinking and practical tools behin
 
 ---
 
-### Testimonial (More Joy at Work page)
-> "Caroline facilitated a workshop with my unit and carefully constructed and worked with us to unpack and redefine our purpose, culture and emotions to best help us adapt to new work priorities. It was a warm, well-paced workshop, and many of the team came out of it with a renewed sense of belonging and purpose."
+### Workshop image (More Joy at Work page)
+`assets/images/workshop-lead.webp` — Caroline leading a de-escalation skills workshop with a seated group. Sits between "Explore the thinking" section and the testimonial carousel.
+
+---
+
+### Testimonials (More Joy at Work page — carousel of two)
+
+**Testimonial 1**
+> "Caroline facilitated a workshop with my unit and carefully constructed and worked with us to unpack and redefine our purpose, culture and emotions to best help us adapt to new work priorities. It was a warm, well-paced workshop, and many of the team came out of it with a renewed sense of belonging and purpose. I would recommend Caro to anyone doing a culture shift piece with their teams!"
 
 *Belinda Lewis — Senior Director, Queensland Health*
+
+**Testimonial 2**
+> "Your 'More Joy' session on using EI to de-escalate conflict was a crucial part of our event's success. I've heard nothing but amazing feedback from our frontline staff."
+
+*Education Lead — Growlife Medical*
 
 ---
 
