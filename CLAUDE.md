@@ -326,13 +326,14 @@ Rendered in cumquat, italic Lora, 13px, uppercase letter-spacing.
 3. Services → `/services`
 4. How it works → `/how-it-works`
 5. Case Studies → `/case-studies`
-6. More Joy at Work → `/more-joy-at-work`
-7. FAQ → `/faq`
-8. Contact → `/contact`
-9. LinkedIn icon → external, `target="_blank" rel="noopener"`
+6. FAQ → `/faq`
+7. Contact → `/contact`
+8. LinkedIn icon → external, `target="_blank" rel="noopener"`
+
+More Joy at Work is **not** in the primary nav — it is discoverable via the Services page and is linked from the footer nav. This is intentional: the sub-brand is presented as a product of Macaulay Consulting rather than a peer entry point.
 
 ### Footer nav
-Three-column footer: brand column (logo, descriptor, email, phone, Clarity Consortium affiliation), Navigate column (mirrors primary nav minus Home: About, Services, How it works, Case Studies, More Joy at Work, FAQ, Contact), and Acknowledgement of Country column. Bottom bar carries the copyright, LinkedIn icon (public pages only), and the runtime-injected "Updated [date]".
+Three-column footer: brand column (logo, descriptor, email, phone, Clarity Consortium affiliation), Navigate column (About, Services, How it works, Case Studies, More Joy at Work, FAQ, Contact), and Acknowledgement of Country column. Bottom bar carries the copyright, LinkedIn icon (public pages only), and the runtime-injected "Updated [date]".
 
 ### Internal reference pages (not in nav)
 - `/visual-identity` — living style guide, links to live stylesheet
