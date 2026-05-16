@@ -59,6 +59,11 @@ Every engagement is scoped to what is actually needed — not a standard package
 
 **Link:** Meet Caroline → /about
 
+**Pull-quote callout (appears below the link):**
+> "The best facilitation I've witnessed — so genuine."
+
+*Workshop Participant — Social Policy Team Planning Day, Queensland Health*
+
 ---
 
 ### How the work happens
@@ -106,6 +111,8 @@ A structured team culture programme built on emotional culture research and neur
 
 ### Testimonials
 
+*Carousel appears between the workshop cards section and the services snapshot.*
+
 **Testimonial 1**
 > "The youth strategy would not have been possible without your skilled facilitation and commitment to listening to, engaging with and empowering young people."
 
@@ -125,6 +132,11 @@ A structured team culture programme built on emotional culture research and neur
 > "I've been to a lot of workshops, but this was workshop perfection."
 
 *Workshop Participant — Inclusion and Access Strategy Workshop, Qld Department of Transport and Main Roads*
+
+**Testimonial 5**
+> "Caro has become a valued partner to Growlife, helping facilitate our long term strategy and navigate through change. Both major projects she has worked on have resulted in teams who are energised and motivated after finding and clarifying their own internal purpose."
+
+*Aaron Chambers — Founder and General Practitioner, Growlife Medical*
 
 ---
 

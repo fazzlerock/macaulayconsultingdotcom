@@ -800,6 +800,27 @@ h1 em, h2 em, h3 em, h4 em {
   max-width: 64ch;
 }
 .bio-text p + p { margin-top: 20px; }
+.intro-pullquote {
+  border-left: 3px solid var(--color-cumquat);
+  padding-left: 20px;
+  margin-top: 28px;
+}
+.intro-pullquote p {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(16px, 1.8vw, 19px);
+  color: var(--color-text);
+  max-width: none;
+  line-height: 1.5;
+}
+.intro-pullquote cite {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--color-slate);
+  font-style: normal;
+  margin-top: 8px;
+}
 @media (max-width: 780px) {
   .bio-grid { grid-template-columns: 1fr; }
   .bio-photo { position: static; }
