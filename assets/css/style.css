@@ -838,8 +838,6 @@ h1 em, h2 em, h3 em, h4 em {
   font-size: 14px;
   color: var(--color-slate);
   margin-top: 24px;
-  padding-top: 20px;
-  border-top: 1px dashed var(--color-stone);
 }
 .cred-institution {
   font-family: var(--font-body);
