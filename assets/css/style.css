@@ -1222,3 +1222,67 @@ h1 em, h2 em, h3 em, h4 em {
   .workshop-card,
   .workshop-card:nth-child(n) { transform: none; }
 }
+
+/* ============================================================
+   SERVICE DETAIL PAGES (services/*)
+   ============================================================ */
+.svc-detail-body p {
+  font-size: clamp(16px, 1.9vw, 17px);
+  line-height: 1.82;
+  margin-bottom: 20px;
+}
+.svc-detail-body h2 { margin-bottom: 20px; }
+
+.case-pull-card {
+  border-left: 3px solid var(--color-cumquat);
+  padding: 20px 24px;
+  background: var(--color-linen);
+  margin: 36px 0;
+  border-radius: 0 4px 4px 0;
+}
+.case-pull-card p { font-style: italic; color: var(--color-text); margin-bottom: 12px; font-size: 16px; }
+
+.related-svc-links { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 16px; }
+
+/* Services overview cards (6-up grid on overview page) */
+.svc-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+}
+.svc-overview-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-stone);
+  border-radius: 4px;
+  padding: 28px 28px 24px;
+  display: flex;
+  flex-direction: column;
+}
+.svc-overview-num {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 1;
+  color: var(--color-stone);
+  margin-bottom: 12px;
+}
+.svc-overview-card h3 { margin-bottom: 12px; font-size: clamp(18px, 2vw, 22px); }
+.svc-overview-card p { font-size: 15px; line-height: 1.72; color: var(--color-text-light); flex: 1; margin-bottom: 20px; }
+.svc-overview-link {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-cumquat);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap var(--t);
+}
+.svc-overview-link:hover { gap: 12px; text-decoration: underline; text-underline-offset: 3px; border-bottom: none; }
+@media (max-width: 960px) {
+  .svc-overview-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .svc-overview-grid { grid-template-columns: 1fr; }
+}

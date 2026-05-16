@@ -15,7 +15,14 @@ Claude Code acts as the CMS: when content needs updating, edit the HTML files di
 /
 ├── index.html                              ← Home (/)
 ├── about.html                              ← /about
-├── services.html                           ← /services
+├── services.html                           ← /services (overview — links out to each service area)
+├── services/
+│   ├── strategy-and-planning.html          ← /services/strategy-and-planning
+│   ├── co-design.html                      ← /services/co-design
+│   ├── facilitation.html                   ← /services/facilitation
+│   ├── evaluation-and-research.html        ← /services/evaluation-and-research
+│   ├── culture.html                        ← /services/culture
+│   └── child-and-youth-work.html           ← /services/child-and-youth-work
 ├── case-studies.html                       ← /case-studies
 ├── more-joy-at-work.html                   ← /more-joy-at-work
 ├── contact.html                            ← /contact
@@ -69,6 +76,26 @@ Claude Code acts as the CMS: when content needs updating, edit the HTML files di
 **To deploy:** push to `main`. Cloudflare Pages deploys automatically. Development work goes on a feature branch and is merged via pull request. Never push directly to `main`.
 
 **Clean URLs (external use only):** Cloudflare Pages serves `about.html` at `/about`, `status/index.html` at `/status`, etc., and the `_redirects` file ensures clean paths still resolve. However, **internal site links use relative paths with `.html`** (`about.html`, `services.html`, …), not absolute clean URLs. This is required for GitHub Pages previews and local previews to work, since those don't honour `_redirects`. Reserve clean URLs for things like canonical/og:url meta tags and external references (LinkedIn, business listings).
+
+---
+
+## Services section structure (as of 2026-05-16)
+
+The Services section uses an overview-plus-detail pattern:
+
+- `/services` — overview page, links out to each service area
+- `/services/strategy-and-planning` — strategic planning facilitation for boards and leadership teams
+- `/services/co-design` — human-centred design with service users and communities
+- `/services/facilitation` — workshop and event facilitation, sector and subject agnostic
+- `/services/evaluation-and-research` — qualitative programme evaluation and lived experience research
+- `/services/culture` — team culture work; home of the More Joy at Work sub-brand
+- `/services/child-and-youth-work` — specialist work with children, young people and the organisations that serve them
+
+The `/more-joy-at-work` page is the More Joy at Work sub-brand page and sits separately from `/services/culture`. Culture is the formal service category; More Joy at Work is the branded programme within it.
+
+Service sub-pages live in the `services/` directory. All paths in their HTML use `../` prefix (e.g. `../assets/css/style.css`, `../index.html`). They are public pages — no `noindex` tag.
+
+When adding new case studies or content, link to the most specific service page that fits. Where two service pages fit equally (e.g. yourtown youth co-design fits both Co-design and Child and Youth Work), link to both, with the more specialised one as primary.
 
 ---
 
