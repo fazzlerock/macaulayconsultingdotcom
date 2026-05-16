@@ -318,15 +318,16 @@ Rendered in cumquat, italic Lora, 13px, uppercase letter-spacing.
 ## Navigation
 
 ### Primary nav (in order)
-1. Home → `/` (or `index.html` in relative links)
-2. About → `/about`
-3. Services → `/services`
-4. How it works → `/how-it-works`
-5. Case Studies → `/case-studies`
-6. More Joy at Work → `/more-joy-at-work`
-7. FAQ → `/faq`
-8. Contact → `/contact`
-9. LinkedIn icon → external, `target="_blank" rel="noopener"`
+1. About → `/about`
+2. Services → `/services`
+3. How it works → `/how-it-works`
+4. Case Studies → `/case-studies`
+5. More Joy at Work → `/more-joy-at-work`
+6. FAQ → `/faq`
+7. Contact → `/contact`
+8. LinkedIn icon → external, `target="_blank" rel="noopener"`
+
+Note: Home is intentionally absent from the nav — clicking the logo achieves the same outcome.
 
 ### Footer nav
 Three-column footer: brand column (logo, descriptor, email, phone, Clarity Consortium affiliation), Navigate column (mirrors primary nav minus Home: About, Services, How it works, Case Studies, More Joy at Work, FAQ, Contact), and Acknowledgement of Country column. Bottom bar carries the copyright, LinkedIn icon (public pages only), and the runtime-injected "Updated [date]".
