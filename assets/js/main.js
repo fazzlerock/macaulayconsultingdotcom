@@ -149,6 +149,27 @@ if (hamburger && mobileNav) {
   footer.appendChild(span);
 })();
 
+/* ---- FAQ ACCORDION ---- */
+(function () {
+  const items = document.querySelectorAll('.faq-item');
+  if (!items.length) return;
+
+  items.forEach(item => {
+    const btn = item.querySelector('.faq-question');
+    btn.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      items.forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+})();
+
 /* ---- SCROLL REVEAL ---- */
 (function () {
   const els = document.querySelectorAll('.reveal');

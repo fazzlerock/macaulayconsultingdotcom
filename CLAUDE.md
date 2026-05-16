@@ -25,6 +25,7 @@ Claude Code acts as the CMS: when content needs updating, edit the HTML files di
 │   └── child-and-youth-work.html           ← /services/child-and-youth-work
 ├── case-studies.html                       ← /case-studies
 ├── more-joy-at-work.html                   ← /more-joy-at-work
+├── faq.html                                ← /faq
 ├── contact.html                            ← /contact
 ├── visual-identity.html                    ← Visual identity reference (internal — not in public nav)
 ├── font-options.html                       ← Scratch file (internal — ignore)
@@ -103,7 +104,7 @@ When adding new case studies or content, link to the most specific service page 
 
 Because nav and footer markup is duplicated across pages, drift is easy. Before merging any PR that touches shared structure (nav, footer, head meta, or anything that should appear on every page), verify:
 
-- **Nav markup is identical** across all 7 pages (`index`, `about`, `services`, `case-studies`, `more-joy-at-work`, `contact`, `status/index`). The status page has a slimmed internal nav and uses `../` relative paths — its nav is intentionally different but its footer should match the public pages structurally.
+- **Nav markup is identical** across all 8 pages (`index`, `about`, `services`, `case-studies`, `more-joy-at-work`, `faq`, `contact`, `status/index`). The status page has a slimmed internal nav and uses `../` relative paths — its nav is intentionally different but its footer should match the public pages structurally.
 - **Footer markup is identical** across all public pages (links, descriptor, acknowledgement text, copyright year). The status page footer differs only in: (a) `../` relative paths in footer-nav links, and (b) `Internal reference — not for distribution.` copyright suffix.
 - **Copyright year** is current and consistent across all pages.
 - **Internal links use relative paths with `.html`** (e.g. `about.html`) on the root-level pages. Status page uses `../about.html` style relative paths. No absolute clean URLs in nav, footer, or body links — they break GitHub Pages and local previews.
@@ -321,11 +322,12 @@ Rendered in cumquat, italic Lora, 13px, uppercase letter-spacing.
 3. Services → `/services`
 4. Case Studies → `/case-studies`
 5. More Joy at Work → `/more-joy-at-work`
-6. Contact → `/contact`
-7. LinkedIn icon → external, `target="_blank" rel="noopener"`
+6. FAQ → `/faq`
+7. Contact → `/contact`
+8. LinkedIn icon → external, `target="_blank" rel="noopener"`
 
 ### Footer nav
-Three-column footer: brand column (logo, descriptor, email, phone, Clarity Consortium affiliation), Navigate column (mirrors primary nav minus Home), and Acknowledgement of Country column. Bottom bar carries the copyright, LinkedIn icon (public pages only), and the runtime-injected "Updated [date]".
+Three-column footer: brand column (logo, descriptor, email, phone, Clarity Consortium affiliation), Navigate column (mirrors primary nav minus Home: About, Services, Case Studies, More Joy at Work, FAQ, Contact), and Acknowledgement of Country column. Bottom bar carries the copyright, LinkedIn icon (public pages only), and the runtime-injected "Updated [date]".
 
 ### Internal reference pages (not in nav)
 - `/visual-identity` — living style guide, links to live stylesheet
