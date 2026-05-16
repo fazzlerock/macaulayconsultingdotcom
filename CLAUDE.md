@@ -23,6 +23,7 @@ Claude Code acts as the CMS: when content needs updating, edit the HTML files di
 │   ├── evaluation-and-research.html        ← /services/evaluation-and-research
 │   ├── culture.html                        ← /services/culture
 │   └── child-and-youth-work.html           ← /services/child-and-youth-work
+├── how-it-works.html                       ← /how-it-works
 ├── case-studies.html                       ← /case-studies
 ├── more-joy-at-work.html                   ← /more-joy-at-work
 ├── faq.html                                ← /faq
@@ -294,7 +295,7 @@ Rendered in cumquat, italic Lora, 13px, uppercase letter-spacing.
 - Background: `--color-moss-dark` (`#1E2C24`)
 - Three-column grid (`.footer-grid`, `1.4fr 1fr 1.4fr`):
   - `.footer-col-brand` — wordmark, `.footer-descriptor`, `.footer-contact` (email + phone), `.footer-affiliation` ("Member of the Clarity Consortium")
-  - `.footer-col-nav` — `.footer-col-label` ("Navigate") + `.footer-nav` list (About, Services, Case Studies, More Joy at Work, Contact)
+  - `.footer-col-nav` — `.footer-col-label` ("Navigate") + `.footer-nav` list (About, Services, How it works, Case Studies, More Joy at Work, FAQ, Contact)
   - `.footer-col-acknowledgement` — `.footer-col-label` + `.footer-acknowledgement`
 - Folds to 2 columns at 900px (acknowledgement spans full width), single column at 620px
 - `.footer-bar` at bottom: flex, `justify-content: space-between`
@@ -320,14 +321,15 @@ Rendered in cumquat, italic Lora, 13px, uppercase letter-spacing.
 1. Home → `/` (or `index.html` in relative links)
 2. About → `/about`
 3. Services → `/services`
-4. Case Studies → `/case-studies`
-5. More Joy at Work → `/more-joy-at-work`
-6. FAQ → `/faq`
-7. Contact → `/contact`
-8. LinkedIn icon → external, `target="_blank" rel="noopener"`
+4. How it works → `/how-it-works`
+5. Case Studies → `/case-studies`
+6. More Joy at Work → `/more-joy-at-work`
+7. FAQ → `/faq`
+8. Contact → `/contact`
+9. LinkedIn icon → external, `target="_blank" rel="noopener"`
 
 ### Footer nav
-Three-column footer: brand column (logo, descriptor, email, phone, Clarity Consortium affiliation), Navigate column (mirrors primary nav minus Home: About, Services, Case Studies, More Joy at Work, FAQ, Contact), and Acknowledgement of Country column. Bottom bar carries the copyright, LinkedIn icon (public pages only), and the runtime-injected "Updated [date]".
+Three-column footer: brand column (logo, descriptor, email, phone, Clarity Consortium affiliation), Navigate column (mirrors primary nav minus Home: About, Services, How it works, Case Studies, More Joy at Work, FAQ, Contact), and Acknowledgement of Country column. Bottom bar carries the copyright, LinkedIn icon (public pages only), and the runtime-injected "Updated [date]".
 
 ### Internal reference pages (not in nav)
 - `/visual-identity` — living style guide, links to live stylesheet
