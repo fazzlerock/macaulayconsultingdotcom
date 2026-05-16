@@ -806,6 +806,19 @@ h1 em, h2 em, h3 em, h4 em {
   .bio-photo-wrap { max-width: 260px; margin: 0 auto; }
 }
 
+/* ---- ABOUT: INLINE IMAGE ---- */
+.about-img {
+  padding: 0 0 var(--section-pad);
+  background: var(--color-parchment);
+}
+.about-img img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+}
+
 /* ---- ABOUT: CREDENTIALS ---- */
 .cred-list { margin-top: 36px; }
 .cred-row {

@@ -42,10 +42,13 @@ Claude Code acts as the CMS: when content needs updating, edit the HTML files di
 │   │   ├── cm-consulting-logo-horizontal.png            ← Live in nav on all pages
 │   │   └── cm-consulting-logo-horizontal-monochrome.png
 │   ├── images/                             ← General site images
-│   │   ├── portrait.webp                                ← Caroline's headshot (About page)
+│   │   ├── portrait.webp                                ← Caroline's headshot (Home intro section)
 │   │   ├── small-group-session.webp                     ← Services lead image
 │   │   ├── workshop-lead.webp                           ← More Joy at Work page
-│   │   └── your-town-engagement-strategy.webp           ← yourtown case study
+│   │   ├── your-town-engagement-strategy.webp           ← yourtown case study
+│   │   ├── lung-foundation-conference.jpeg              ← About page (between Approach and testimonial)
+│   │   ├── lung-foundation-inclusive-solutions.jpeg     ← Evaluation and Research service page
+│   │   └── conference-presentation.jpeg                 ← Facilitation service page
 │   └── clients/                            ← Client logo files (referenced from clients.json)
 ├── clients.json                            ← Client list — set confirmed:true to show logo on Home
 ├── content_copy.md                         ← Source of truth for all page copy
