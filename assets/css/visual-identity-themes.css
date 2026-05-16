@@ -1,0 +1,324 @@
+/* ============================================================================
+   MACAULAY CONSULTING — VISUAL IDENTITY THEMES
+   ============================================================================
+
+   Usage:  <body class="palette-{name} type-{name}">
+
+   Each palette defines a complete set of CSS variables.
+   Each typography class defines display + body font pairings.
+   Mix any palette with any typography class.
+
+   The "bright cumquat" through-line is consistent: a clear step brighter
+   than the original #E07828, sitting around #F08322 to #F58820 depending
+   on what the surrounding palette will support.
+
+   ---------------------------------------------------------------------------- */
+
+
+/* ============================================================================
+   TYPOGRAPHY — three pairings
+   ============================================================================ */
+
+/* OPTION A — Classical Warmth (current) ------------------------------------- */
+/* Cormorant Garamond + Lora.  Warm, editorial, intelligent.                   */
+/* Reads as: considered, human, slightly literary.                             */
+.type-classical {
+  --font-display: 'Cormorant Garamond', 'EB Garamond', Georgia, serif;
+  --font-body:    'Lora', Georgia, serif;
+  --font-loaded:  'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap';
+}
+
+/* OPTION B — Modern Editorial ----------------------------------------------- */
+/* Fraunces + Inter.  Fraunces has more wonk and character than Cormorant.    */
+/* Reads as: contemporary, characterful, confident.                            */
+.type-modern-editorial {
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body:    'Inter', system-ui, -apple-system, sans-serif;
+  --font-loaded:  'https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap';
+}
+
+/* OPTION C — Matched Modernist ---------------------------------------------- */
+/* DM Serif Display + DM Sans.  A single designer's matched pair.             */
+/* Reads as: clean, slightly more corporate, very Australian-design-studio.   */
+.type-modernist {
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+  --font-loaded:  'https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap';
+}
+
+
+/* ============================================================================
+   PALETTES — six colour schemes
+   ============================================================================ */
+
+
+/* ------------------------------------------------------------------------- */
+/* 1. CITRUS STUDIO                                                          */
+/* ------------------------------------------------------------------------- */
+/* The Impact Co-adjacent option.  Vibrant cumquat paired with a confident   */
+/* cool cobalt.  Bright, modern, clear.  This is the most contemporary of    */
+/* the six and the closest in spirit to the brief Caroline gave you.         */
+/* Recommended typography: type-classical or type-modern-editorial.          */
+
+.palette-citrus-studio {
+  --color-bg:           #FFFFFF;
+  --color-bg-alt:       #F7F8FB;  /* whisper of cool grey for section change */
+  --color-text:         #0F172A;  /* near-black, cool undertone              */
+  --color-text-light:   #475569;  /* mid cool grey                           */
+  --color-accent:       #F08322;  /* brighter cumquat                        */
+  --color-accent-dark:  #D86B12;  /* hover/active                            */
+  --color-anchor:       #1E40AF;  /* deep cobalt blue                        */
+  --color-anchor-light: #DBEAFE;  /* pale cobalt for tinted blocks           */
+  --color-rule:         #E2E8F0;  /* dividers, borders                       */
+  --color-shadow:       rgba(15, 23, 42, 0.06);
+  --color-white:        #FFFFFF;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* 2. STUDIO SAGE                                                            */
+/* ------------------------------------------------------------------------- */
+/* Brings sage back, but in a supporting role.  Cumquat leads; sage shows    */
+/* up as the alternate section colour, the testimonial backdrop, the footer */
+/* and the credential markers.  This is the answer to "I love sage but it   */
+/* didn't work as the brand colour".  Now it's the supporting actor.        */
+/* Recommended typography: type-classical.                                   */
+
+.palette-studio-sage {
+  --color-bg:           #FFFFFF;
+  --color-bg-alt:       #F2F5F1;  /* pale sage, used for alternate sections  */
+  --color-text:         #1A1A1A;
+  --color-text-light:   #5C5C5C;
+  --color-accent:       #F08322;  /* brighter cumquat                        */
+  --color-accent-dark:  #D86B12;
+  --color-anchor:       #5E7D62;  /* mid sage, fully saturated               */
+  --color-anchor-light: #D4DDD3;  /* pale dusty sage                         */
+  --color-rule:         #E5E5E0;
+  --color-shadow:       rgba(26, 26, 26, 0.06);
+  --color-white:        #FFFFFF;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* 3. ATELIER                                                                */
+/* ------------------------------------------------------------------------- */
+/* The editorial option.  Cumquat with a warm wine plum.  This is plum done */
+/* right: warmer, dustier, less corporate than the original aubergine POC.  */
+/* Reads as: gallery monograph, design magazine, considered taste.          */
+/* Recommended typography: type-classical or type-modernist.                */
+
+.palette-atelier {
+  --color-bg:           #FFFFFF;
+  --color-bg-alt:       #FAF6F5;  /* whisper of warm pink                    */
+  --color-text:         #1C1416;  /* near-black with a warm undertone        */
+  --color-text-light:   #6B5A5E;
+  --color-accent:       #ED7E2B;  /* slightly warmer cumquat to harmonise    */
+  --color-accent-dark:  #D5651A;
+  --color-anchor:       #5C2942;  /* deep warm wine plum                     */
+  --color-anchor-light: #E8D5DE;  /* pale dusty rose                         */
+  --color-rule:         #E8E0E2;
+  --color-shadow:       rgba(28, 20, 22, 0.07);
+  --color-white:        #FFFFFF;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* 4. FIELD NOTES                                                            */
+/* ------------------------------------------------------------------------- */
+/* Grounded and confident.  Cumquat with a deep pine forest.  This is much  */
+/* darker than sage, which gives it the gravitas the original Deep Moss     */
+/* attempted but didn't fully achieve.  Reads as: serious work, not boring. */
+/* Recommended typography: type-classical or type-modernist.                */
+
+.palette-field-notes {
+  --color-bg:           #FFFFFF;
+  --color-bg-alt:       #F6F8F6;  /* whisper of green                        */
+  --color-text:         #1A2A1F;  /* near-black with cool green undertone    */
+  --color-text-light:   #4F5B53;
+  --color-accent:       #F08322;  /* brighter cumquat                        */
+  --color-accent-dark:  #D86B12;
+  --color-anchor:       #1F3A2E;  /* deep pine forest                        */
+  --color-anchor-light: #D8E2DC;  /* pale forest mist                        */
+  --color-rule:         #DDE3DE;
+  --color-shadow:       rgba(26, 42, 31, 0.07);
+  --color-white:        #FFFFFF;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* 5. LETTERPRESS                                                            */
+/* ------------------------------------------------------------------------- */
+/* The most restrained option.  Black, white, cumquat.  Nothing else.       */
+/* Forces the cumquat to do all the work, which it can absolutely handle    */
+/* when it's the only colour in the room.  This is the option for someone   */
+/* with the confidence to let the work speak.  Reads as: gallery, atelier,  */
+/* very-good-bookshop.                                                       */
+/* Recommended typography: type-classical or type-modern-editorial.         */
+
+.palette-letterpress {
+  --color-bg:           #FFFFFF;
+  --color-bg-alt:       #FAFAFA;  /* barely off-white                        */
+  --color-text:         #0F0F0F;  /* near-black, very deep                   */
+  --color-text-light:   #4A4A4A;
+  --color-accent:       #F08322;  /* brighter cumquat                        */
+  --color-accent-dark:  #D86B12;
+  --color-anchor:       #0F0F0F;  /* same as text — it is just black + zest  */
+  --color-anchor-light: #E8E8E8;
+  --color-rule:         #D9D9D9;
+  --color-shadow:       rgba(15, 15, 15, 0.08);
+  --color-white:        #FFFFFF;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* 6. SUNROOM                                                                */
+/* ------------------------------------------------------------------------- */
+/* The most direct Impact Co influence.  Tests whether Caroline might come  */
+/* round on warm whites: this uses a soft bone background (very light, but */
+/* clearly warmer than pure white) paired with the brightest cumquat in    */
+/* the set and a deep peacock teal as the anchor.  Worth including because */
+/* her stated favourite reference (Impact Co) does exactly this.  If she   */
+/* still prefers bright white after seeing it rendered, that settles it.   */
+/* Recommended typography: type-modern-editorial.                          */
+
+.palette-sunroom {
+  --color-bg:           #FBF8F2;  /* soft bone, slightly warmer than white   */
+  --color-bg-alt:       #FFFFFF;  /* pure white as the alternate             */
+  --color-text:         #1A1815;
+  --color-text-light:   #5B544A;
+  --color-accent:       #F58820;  /* most vibrant cumquat in the set         */
+  --color-accent-dark:  #DD6E0E;
+  --color-anchor:       #0D4F5C;  /* deep peacock teal                       */
+  --color-anchor-light: #D5E5E9;  /* pale sea mist                           */
+  --color-rule:         #EAE2D2;
+  --color-shadow:       rgba(26, 24, 21, 0.06);
+  --color-white:        #FFFFFF;
+}
+
+
+/* ============================================================================
+   SHARED COMPONENT STYLES
+   ----------------------------------------------------------------------------
+   The following styles use the variables defined above.  They should work
+   identically across all six palettes.  Drop these into each visual-identity
+   page so Caroline sees real components, not just colour chips.
+   ============================================================================ */
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0;
+}
+
+h1 { font-size: 56px; line-height: 1.1; letter-spacing: -0.01em; }
+h2 { font-size: 36px; line-height: 1.2; }
+h3 { font-size: 22px; line-height: 1.3; }
+
+p { margin: 0 0 1em; }
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-rule);
+  transition: border-color 0.2s, color 0.2s;
+}
+a:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  color: var(--color-accent);
+  text-transform: none;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: var(--color-accent);
+  color: var(--color-white);
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 3px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-primary:hover {
+  background: var(--color-accent-dark);
+  color: var(--color-white);
+}
+
+.btn-secondary {
+  display: inline-block;
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom: 1px solid var(--color-rule);
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+.btn-secondary:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.section-anchor {
+  background: var(--color-anchor);
+  color: var(--color-white);
+}
+.section-anchor h2,
+.section-anchor h3,
+.section-anchor p { color: var(--color-white); }
+.section-anchor .eyebrow { color: var(--color-accent); }
+.section-anchor .btn-primary { background: var(--color-accent); }
+.section-anchor .btn-secondary {
+  color: var(--color-white);
+  border-color: rgba(255,255,255,0.3);
+}
+
+.section-alt { background: var(--color-bg-alt); }
+
+.rule {
+  height: 1px;
+  background: var(--color-rule);
+  border: none;
+  margin: 32px 0;
+}
+
+.swatch-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-rule);
+  padding: 24px;
+  border-radius: 4px;
+}
+
+blockquote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 22px;
+  line-height: 1.4;
+  color: var(--color-text);
+  border-left: 2px solid var(--color-accent);
+  padding-left: 20px;
+  margin: 24px 0;
+}
