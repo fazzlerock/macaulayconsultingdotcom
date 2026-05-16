@@ -23,8 +23,8 @@
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body:    'Lora', Georgia, serif;
 
-  --max-w:       1100px;
-  --content-w:   720px;
+  --max-w:       1280px;
+  --content-w:   800px;
   --nav-h:       72px;
   --section-pad: clamp(56px, 8vw, 96px);
 
