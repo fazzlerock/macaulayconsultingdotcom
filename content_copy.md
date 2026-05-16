@@ -18,7 +18,7 @@ This file is the source of truth for all page copy on the Macaulay Consulting we
 **Affiliation line:** *Member of the [Clarity Consortium](https://clarityconsortium.com.au/)*
 
 ### Footer — Navigate column
-About · Services · Case Studies · More Joy at Work · Contact
+About · Services · How it works · Case Studies · More Joy at Work · FAQ · Contact
 
 ### Footer — Acknowledgement of Country column
 > Macaulay Consulting acknowledges the Traditional Custodians of the lands on which we work, the Turrbal and Jagera peoples of Meanjin (Brisbane), and pays respect to Elders past and present.
@@ -83,7 +83,7 @@ Culture programmes that give teams a shared language and practical tools to buil
 
 **Heading:** What Macaulay Consulting does
 
-**Intro:** Scoped to your needs. Designed around your context. Five core areas of practice.
+**Intro:** Scoped to your needs. Designed around your context. Six core areas of practice.
 
 **01 — Strategy & Planning**
 Strategic planning facilitation for boards and leadership teams. Purpose, priorities and plans that people actually commit to.
@@ -180,6 +180,9 @@ Her work spans Queensland Health, West Moreton Health, Children's Health Queensl
 - **Emotional Culture Practitioner** — The Emotional Culture Deck
 - **i4 Neuro-Leadership Trainer** *(in progress)* — About My Brain Institute
 - **Psychological Safety and Care Practitioner** — The Leaders Lab
+
+*Professional standing (displayed below credentials, separated by spacing):*
+Macaulay Consulting holds professional indemnity insurance. Certificate of currency available on request.
 
 ---
 
@@ -614,6 +617,85 @@ Strategies, services and programmes that carry real authority because they were 
 
 ---
 
+## How it Works (`how-it-works.html`)
+
+### Hero
+**Eyebrow:** How it works
+
+**Heading:** No package. No pitch. Just a *process built around your situation.*
+
+---
+
+### Intro
+Every engagement is different because every organisation is different. What stays constant is the process: a disciplined approach to understanding the situation before proposing anything, scoping the work carefully, and delivering with rigour and care.
+
+---
+
+### Step 01 — The first call
+**Heading:** We talk before anything else.
+
+You tell Caroline what you're working with. She listens — properly — and asks the questions that help her understand what is actually going on, not just what the brief says. If Macaulay Consulting is not the right fit, she will tell you, and she will often point you somewhere better.
+
+**What to expect:** An honest conversation. No pitch deck. No pressure. Usually 30–45 minutes.
+
+---
+
+### Step 02 — The scoping document
+**Heading:** The work gets defined in writing.
+
+If the first call lands well, Caroline proposes a scope in writing: what the engagement will involve, what it will not involve, how long it will take, what it will cost, and what a good outcome looks like. This document is the foundation of the engagement — and you are invited to push back on it.
+
+**What to expect:** A clear, plain-English document. No surprises buried in fine print. A conversation to refine it before anything is agreed.
+
+---
+
+### Step 03 — The work itself
+**Heading:** Delivery with rigour and care.
+
+The engagement unfolds according to the scope, with the flexibility to respond to what actually emerges. Caroline does all client-facing work personally. There is no handoff to a junior team member once the contract is signed.
+
+**What to expect:** Consistent, senior-level engagement throughout. Regular check-ins. Transparency if something is not working.
+
+---
+
+### Step 04 — Close and handover
+**Heading:** The work ends intentionally.
+
+Every engagement closes with a deliberate handover: a synthesis of what was produced, what was learned, and what the organisation needs to do next. The goal is not dependency. It is capability — leaving the organisation stronger and better equipped than it found us.
+
+**What to expect:** A clear close. Documentation of outputs. Honest reflection on what worked and what could have been better.
+
+---
+
+### Values
+**Eyebrow:** What shapes the work
+
+**Heading:** Five things that shape every engagement
+
+01 — **Clarity** — Cutting through complexity to define a clear path forward.
+02 — **Collaboration** — Working with you, not just for you.
+03 — **Compassion** — Emotional intelligence is not a soft skill. It is the foundation of effective change.
+04 — **Playfulness** — Purposeful lightness makes hard conversations more productive, not less.
+05 — **Positive Ripple Effects** — Every engagement is designed to leave your organisation stronger than it found it.
+
+---
+
+### Testimonial
+> "Caroline helped us pave the way for important changes ahead in our health service. She designed workshops that engaged everyone in the room, and kept us focussed on the key issues. With her help, we achieved the results we needed in a really positive way."
+
+*Therese Hayes — Executive Director, West Moreton Hospital and Health Service*
+
+---
+
+### CTA
+**Heading:** Want to know what this looks like for your situation?
+
+**Primary CTA:** Call +61 404 014 117
+
+**Secondary CTA:** or email caro@consultcm.com.au
+
+---
+
 ## Case Studies (`case-studies.html`)
 
 ### Hero
@@ -785,6 +867,60 @@ Caroline shares short videos on the research, thinking and practical tools behin
 **Heading:** Interested in bringing More Joy at Work to your team?
 
 Let's start with a conversation about where your team is and where you'd like to take them.
+
+**Primary CTA:** Call +61 404 014 117
+
+**Secondary CTA:** or email caro@consultcm.com.au
+
+---
+
+## FAQ (`faq.html`)
+
+### Hero
+**Eyebrow:** FAQ
+
+**Heading:** Common *questions.*
+
+**Subheading:** Answers to the things people most often want to know before getting in touch.
+
+---
+
+### Questions (accordion, single-open)
+
+**Q1 — What kinds of organisations do you work with?**
+Macaulay Consulting works primarily with health and public sector organisations, the community sector, and government agencies. Most clients are in Queensland, though engagements across Australia are welcome. The common thread is not sector — it is purpose: organisations that are genuinely trying to do something worthwhile and need skilled support to do it better.
+
+**Q2 — Do you work with private sector organisations?**
+Yes. A smaller portion of the practice is private sector, typically organisations with a strong community or social purpose focus. If you are unsure whether your context is a fit, the first call will make that clear quickly.
+
+**Q3 — How does pricing work?**
+Every engagement is scoped and priced individually. There are no standard packages. After an initial conversation, Caroline provides a written scope that includes a clear cost — fixed fee or day rate, depending on the nature of the work. There are no hidden extras or scope creep billed after the fact.
+
+**Q4 — Can you work within government procurement requirements?**
+Yes. Caroline is experienced with the procurement processes common in Queensland Health, government departments and large community sector organisations, including panel arrangements, standing offers and standard contracting requirements. Get in touch and she can advise whether existing arrangements apply.
+
+**Q5 — Do you subcontract or bring in other people?**
+Occasionally, for large or specialist engagements, Caroline will bring in one or two trusted collaborators from the Clarity Consortium or her broader network — always disclosed upfront and agreed with the client. All client-facing work is led personally by Caroline.
+
+**Q6 — What is the Clarity Consortium?**
+The Clarity Consortium is a network of nine independent Australian consultants — each a specialist in their own field — who collaborate on larger, multi-discipline engagements. Caroline is a founding member. Engaging Macaulay Consulting can give you access to the broader consortium when the work calls for it. [More about Caroline's affiliations →](/about)
+
+**Q7 — How long does a typical engagement run?**
+It varies enormously. A single facilitated workshop might be half a day of delivery plus a few hours of design. A strategic planning process might run over two to three months. A culture programme could be six months or more. Caroline will give you a realistic time estimate as part of the scoping conversation.
+
+**Q8 — Do you travel for in-person work?**
+Yes. While most clients are in Queensland, Caroline travels for in-person work when the engagement warrants it. Travel costs are discussed and agreed as part of the scoping process.
+
+**Q9 — Can you support an existing internal process rather than lead the whole thing?**
+Yes. Some engagements involve Caroline designing a process that an internal team then runs, or playing a supporting role alongside an internal facilitator. The scope is built around what will actually be most useful.
+
+**Q10 — What is the best way to get started?**
+A phone call. Caroline's number is +61 404 014 117. You can also email caro@consultcm.com.au or use the contact form. There is no pitch, no obligation and no pressure — just an honest conversation about whether this kind of work could help.
+
+---
+
+### CTA
+**Heading:** Still have questions?
 
 **Primary CTA:** Call +61 404 014 117
 
