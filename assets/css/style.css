@@ -879,6 +879,14 @@ h1 em, h2 em, h3 em, h4 em {
   font-size: 14px;
   color: var(--color-slate);
 }
+.cred-desc {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-slate);
+  margin-top: 6px;
+  line-height: 1.6;
+}
 
 /* ---- ABOUT: HOW SECTION ---- */
 .how-text p {
