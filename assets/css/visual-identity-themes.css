@@ -349,7 +349,6 @@ button:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2
 
 .section {
   padding-block: clamp(52px, 7vw, 88px);
-  background: var(--color-bg);
 }
 
 /* ---- Review header (sticky top bar) ---- */
