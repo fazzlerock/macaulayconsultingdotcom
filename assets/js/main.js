@@ -123,6 +123,19 @@ if (hamburger && mobileNav) {
     }
 
     display.innerHTML = html;
+
+    /* Scroll-based colour reveal — touch devices only (desktop uses :hover) */
+    if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) entry.target.classList.add('in-view');
+        });
+      }, { rootMargin: '0px 0px -50% 0px', threshold: 0 });
+      display.querySelectorAll('.client-item').forEach(function(el) {
+        observer.observe(el);
+      });
+    }
+
   } catch (_) {
     const section = document.querySelector('.clients-section');
     if (section) section.hidden = true;
