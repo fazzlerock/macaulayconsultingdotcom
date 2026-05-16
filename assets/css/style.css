@@ -615,7 +615,8 @@ h1 em, h2 em, h3 em, h4 em {
   filter: grayscale(1) opacity(0.6);
   transition: filter 0.3s ease;
 }
-.client-item:hover img { filter: grayscale(0) opacity(1); }
+.client-item:hover img,
+.client-item.in-view img { filter: grayscale(0) opacity(1); }
 .client-item--placeholder span {
   font-family: var(--font-body);
   font-size: 13px;
