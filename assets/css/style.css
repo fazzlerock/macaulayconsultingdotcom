@@ -690,6 +690,7 @@ h1 em, h2 em, h3 em, h4 em {
   transition: color var(--t);
 }
 .footer-contact a:hover { color: var(--color-cumquat); }
+.footer-contact a.footer-whatsapp { display: flex; align-items: center; gap: 6px; }
 .footer-affiliation {
   margin: 20px 0 0;
   font-family: var(--font-body);
