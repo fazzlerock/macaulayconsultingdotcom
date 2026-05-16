@@ -832,6 +832,15 @@ h1 em, h2 em, h3 em, h4 em {
   display: block;
   margin-bottom: 3px;
 }
+.cred-insurance {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--color-slate);
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px dashed var(--color-stone);
+}
 .cred-institution {
   font-family: var(--font-body);
   font-style: italic;
@@ -1417,3 +1426,16 @@ h1 em, h2 em, h3 em, h4 em {
   .faq-answer-inner { padding-left: 0; }
   .faq-q-num { display: none; }
 }
+
+/* ---- HOW IT WORKS PAGE ---- */
+.how-step-intro {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(18px, 2.1vw, 22px);
+  color: var(--color-slate);
+  line-height: 1.4;
+  max-width: 58ch;
+  margin-bottom: 28px;
+}
+.how-step-detail li { list-style: none; padding: 0; }
+.how-step-detail li + li { margin-top: 14px; }
