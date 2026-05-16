@@ -40,7 +40,7 @@ About · Services · How it works · Case Studies · More Joy at Work · FAQ · 
 ### Hero
 **Eyebrow:** Brisbane · Queensland
 
-**Heading:** Turning good intentions into *clarity into results.*
+**Heading:** Turning good intentions into *clarity and results.*
 
 **Subheading:** Macaulay Consulting helps health and public sector organisations think more clearly, work more effectively, and build cultures where people and ideas can flourish.
 
@@ -51,6 +51,8 @@ About · Services · How it works · Case Studies · More Joy at Work · FAQ · 
 ---
 
 ### Intro
+**Photo:** `assets/images/portrait.webp` — displayed alongside intro text in a two-column layout (bio-grid). Portrait on left, text on right.
+
 Caroline Macaulay brings fifteen years of frontline health experience and a decade of strategy and improvement work to organisations navigating real change. She is a facilitator, strategist and culture practitioner who works across Queensland and beyond.
 
 Every engagement is scoped to what is actually needed — not a standard package. From a single planning session to a multi-month programme, the work is always grounded in the real complexity of public and community sector organisations.
@@ -157,7 +159,7 @@ Every engagement begins with a no-obligation call. Tell Caroline what you're wor
 
 ### Biography
 
-**Photo:** `assets/images/portrait.webp` (live)
+*Portrait no longer appears on the About page — it has moved to the Home page intro section. The Lung Foundation conference photo (`lung-foundation-conference.jpeg`) appears between the "How Caroline works" section and the testimonial.*
 
 Caroline Macaulay spent fifteen years as a speech pathologist, working with children, young people and families to help them find and use their voice. That experience seeded everything that followed: a deep belief in the power of connection, a commitment to listening before acting, and a conviction that systems should empower people rather than diminish them.
 
