@@ -2,6 +2,12 @@
 # These redirects ensure any links using clean paths still resolve.
 /about              /about.html              200
 /services           /services.html           200
+/services/strategy-and-planning   /services/strategy-and-planning.html   200
+/services/co-design               /services/co-design.html               200
+/services/facilitation            /services/facilitation.html            200
+/services/evaluation-and-research /services/evaluation-and-research.html 200
+/services/culture                 /services/culture.html                 200
+/services/child-and-youth-work    /services/child-and-youth-work.html    200
 /more-joy-at-work   /more-joy-at-work.html   200
 /contact            /contact.html            200
 /case-studies       /case-studies.html       200

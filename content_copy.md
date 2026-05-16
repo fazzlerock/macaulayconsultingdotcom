@@ -227,89 +227,56 @@ The best way is a conversation. No pitch, no pressure.
 
 ---
 
-## Services (`services.html`)
+## Services overview (`services.html`)
 
 ### Hero
 **Eyebrow:** Services
 
 **Heading:** From good intentions to *effective action.*
 
-**Subheading:** A range of services designed around your needs and context — not a standard methodology.
+**Subheading:** A range of services designed around your needs and context, not a standard methodology.
 
 ---
 
 ### Lead image
-`assets/images/small-group-session.webp` — Caroline facilitating a small-group strategic planning session at a round table. Sits between hero and Service 01 as a full-width banner.
+`assets/images/small-group-session.webp` — Caroline facilitating a small-group strategic planning session at a round table.
 
 ---
 
-### 01 — Strategy & Planning
+### Intro
+Macaulay Consulting offers six core areas of practice, each scoped to the specific context of the organisations it serves.  Engagements range from a single facilitated session to multi-month programmes spanning strategy, research and culture work.
 
-**Heading:** Strategic Planning and Facilitation, Brisbane
+Whether you need a board retreat, a co-design process with service users, an evaluation of an existing programme, or a sustained piece of team culture work, the starting point is always the same: a conversation about what you are actually trying to achieve.
 
-Working in a human-centred way, Macaulay Consulting helps organisations clarify their context, articulate a clear purpose, set meaningful priorities and develop practical plans with measurable outcomes.
-
-This is strategy that people actually understand and commit to — not a document that lives in a drawer.
-
-**What's included:**
-- Strategic planning facilitation with boards and leadership teams
-- Annual planning cycles and operational priority-setting
-- Purpose and vision workshops
-- Theory of change development
+Caroline works with organisations across health and human services, the community sector, government, legal aid and the private sector, with particular depth of expertise in services for children, young people and families.
 
 ---
 
-### 02 — Co-design
+### Service cards (six)
 
-**Heading:** Co-design
+**01 — Strategy and Planning**
+Strategic planning facilitation for boards, executive teams and leadership groups.  Purpose, priorities and plans that people understand and commit to.
+Link: Learn more about Strategy and Planning → /services/strategy-and-planning
 
-Good services are built with the people who use them, not just for them. Macaulay Consulting facilitates collaborative, human-centred design processes that bring together service users, staff and stakeholders to create solutions grounded in real experience.
+**02 — Co-design**
+Human-centred design processes that build solutions grounded in the real experience of service users, staff and communities.
+Link: Learn more about Co-design → /services/co-design
 
-**What's included:**
-- Service design and redesign processes
-- Community and stakeholder consultation
-- Participatory programme design
-- Staff-led improvement projects
+**03 — Facilitation**
+Workshop and event facilitation that creates genuine engagement and produces outcomes people remember and act on.
+Link: Learn more about Facilitation → /services/facilitation
 
----
+**04 — Evaluation and Research**
+Qualitative programme evaluation and research that captures what data alone cannot, and helps decision-makers act on it.
+Link: Learn more about Evaluation and Research → /services/evaluation-and-research
 
-### 03 — Evaluation
+**05 — Culture**
+Structured team culture work, including the More Joy at Work programme, drawing on emotional culture research, neuro-leadership and psychological safety practice.
+Link: Learn more about Culture work → /services/culture
 
-**Heading:** Evaluation and Qualitative Research
-
-Understanding whether a programme is working, and why, requires more than data. Macaulay Consulting contributes to evaluations that assess appropriateness, effectiveness and impact, with a particular focus on qualitative research and bringing lived experience into evidence that informs decision-making.
-
-**What's included:**
-- Programme evaluation (qualitative component)
-- Stakeholder and community consultation
-- Focus groups and in-depth interviews
-- Synthesis reporting for decision-makers
-
----
-
-### 04 — Facilitation
-
-**Heading:** Workshop and Event Facilitation, Brisbane
-
-Macaulay Consulting designs and delivers meetings, workshops and events that produce real outcomes while creating genuine engagement, connection and creative energy in the room.
-
-Facilitation services are sector and subject agnostic: Caroline brings the process expertise, your team brings the content knowledge.
-
-**What's included:**
-- Leadership team away-days and planning sessions
-- All-staff forums and culture days
-- Stakeholder engagement events
-- Conference facilitation and panel moderation
-
----
-
-### 05 — More Joy at Work
-
-**Heading:** More Joy at Work
-
-A branded programme of team culture work that helps people understand and actively shape the way they work together. More than a team-building exercise, More Joy at Work is a structured, evidence-based approach to building cultures where people feel connected, energised and motivated.
-
-**Link:** Find out more about More Joy at Work → /more-joy-at-work
+**06 — Child and Youth Work**
+Specialist facilitation, co-design and engagement with children, young people and the organisations that serve them, grounded in fifteen years of frontline practice.
+Link: Learn more about Child and Youth Work → /services/child-and-youth-work
 
 ---
 
@@ -340,15 +307,15 @@ Every engagement is designed to leave your organisation stronger than it found i
 
 **Heading:** What does working with Macaulay Consulting actually look like?
 
-Most engagements begin with a scoping conversation — a genuine exchange to understand what the organisation is working with, what has been tried, and what kind of support would actually make a difference. There is no standard package, no off-the-shelf methodology applied regardless of context.
+Most engagements begin with a scoping conversation — a genuine exchange to understand what the organisation is working with, what has been tried, and what kind of support would actually make a difference.  There is no standard package, no off-the-shelf methodology applied regardless of context.
 
-From there, Caroline proposes an approach calibrated to the problem: the right structure, the right process, the right level of involvement. The work itself ranges from a single half-day planning session to a multi-month programme of facilitation, research and culture work.
+From there, Caroline proposes an approach calibrated to the problem: the right structure, the right process, the right level of involvement.  The work itself ranges from a single half-day planning session to a multi-month programme of facilitation, research and culture work.
 
-Clients consistently describe the process as both rigorous and human — structured enough to produce results, flexible enough to honour complexity. See recent examples of the work.
+Clients consistently describe the process as both rigorous and human — structured enough to produce results, flexible enough to honour complexity.
 
 ---
 
-### Testimonial (Services page)
+### Testimonial
 > "The best facilitation I've witnessed — so genuine."
 
 *Workshop Participant — Social Policy Team Planning Day, Queensland Health*
@@ -358,11 +325,292 @@ Clients consistently describe the process as both rigorous and human — structu
 ### CTA
 **Heading:** Not sure which service fits your situation?
 
-Start with a call. Caroline will listen to what you are working with and help you work out what kind of support would actually make a difference.
+Start with a call.  Caroline will listen to what you are working with and help you work out what kind of support would actually make a difference.
 
 **Primary CTA:** Call +61 404 014 117
 
 **Secondary CTA:** or email caro@consultcm.com.au
+
+---
+
+## Strategy and Planning (`services/strategy-and-planning.html`)
+
+**H1:** Strategy and Planning
+
+**Subheading:** Strategic planning facilitation for boards, executive teams and leadership groups across Queensland and beyond.
+
+### What it is
+Macaulay Consulting helps organisations clarify their context, articulate a clear purpose, set meaningful priorities and develop practical plans with measurable outcomes.  Working in a human-centred way, Caroline designs and facilitates planning processes that produce strategy people actually understand and commit to, not a document that lives in a drawer.
+
+Every strategic planning engagement is scoped to the organisation it serves.  A two-year-old social enterprise needs a different process from a 200-staff hospital and health service, and both need something different from a community-controlled organisation navigating funding change.  The structure of the engagement, the people in the room, the depth of pre-work and the format of the deliverable are all built to fit.
+
+### Who it's for
+- Health and human services
+- Government departments and agencies
+- Community sector organisations and not-for-profits
+- Legal aid services and community legal centres
+- Private sector organisations with a strong purpose focus
+
+### What's included
+- Pre-engagement scoping conversations with the board chair, CEO or sponsor
+- Stakeholder interviews and environmental scanning
+- Strategic planning facilitation with boards and leadership teams
+- Annual planning cycles and operational priority-setting
+- Purpose, vision and values workshops
+- Theory of change development
+- Strategic plan drafting and refinement
+- Implementation roadmaps and accountability structures
+
+### Typical engagements
+- A board retreat to set a new three-year strategic direction
+- An executive offsite to align on priorities for the year ahead
+- A facilitated process to refresh purpose and values after a leadership change
+- A theory of change workshop for a new programme or service
+- A series of planning sessions across a multi-team organisation
+
+### Outcomes
+A well-facilitated strategic planning process produces more than a document.  It produces shared understanding among the people responsible for delivering the strategy, clear language for what matters and what doesn't, and a practical sense of how to move forward together.  Clients consistently describe the experience as both rigorous and energising.
+
+**Related case study:** West Moreton Health
+
+**Related services:** Facilitation, Co-design
+
+**CTA heading:** Considering a planning process?
+
+---
+
+## Co-design (`services/co-design.html`)
+
+**H1:** Co-design
+
+**Subheading:** Human-centred design processes that build solutions grounded in the real experience of service users, staff and communities.
+
+### What it is
+Good services are built with the people who use them, not just for them.  Macaulay Consulting facilitates collaborative, human-centred design processes that bring together service users, staff and stakeholders to create solutions grounded in real experience.
+
+Co-design is not consultation.  It is a structured process of building something together, where the people most affected by a service have genuine influence over how it is shaped.  Done well, it produces solutions that work in practice because the practical realities are embedded from the start.  It also produces something less tangible but equally valuable: shared ownership of what comes next.
+
+### Who it's for
+- Health and human services
+- Government departments and agencies designing new programmes
+- Community sector organisations
+- Education and youth services
+- Legal aid services rethinking access pathways
+- Private sector organisations developing community-facing programmes
+
+### What's included
+- Project scoping and stakeholder mapping
+- Recruitment design for participants with lived experience
+- Service design and redesign processes
+- Community and stakeholder consultation
+- Participatory programme design
+- Staff-led improvement projects
+- Synthesis of contributions into actionable design directions
+- Prototyping and testing with end users
+
+### Typical engagements
+- A youth strategy shaped with the young people the strategy is for
+- A service redesign with the people who use the service and the staff who deliver it
+- A new programme designed with community members from the outset
+- A staff-led improvement project bringing frontline experience into systems change
+
+### Outcomes
+Co-design produces services that work because they are grounded in real experience.  It also produces durable relationships between organisations and the communities they serve, and surfaces insights that no desk research or quantitative survey would have generated.  The strategies, programmes and services that emerge carry real authority because they were built with the people closest to the work.
+
+**Related case study:** yourtown
+
+**Related services:** Child and Youth Work, Evaluation and Research
+
+**CTA heading:** Building something with the people it's for?
+
+---
+
+## Facilitation (`services/facilitation.html`)
+
+**H1:** Facilitation
+
+**Subheading:** Workshop and event facilitation that creates genuine engagement and produces outcomes people remember and act on.
+
+### What it is
+Macaulay Consulting designs and delivers meetings, workshops and events that produce real outcomes while creating genuine engagement, connection and creative energy in the room.
+
+Facilitation services are sector and subject agnostic: Caroline brings the process expertise, your team brings the content knowledge.  Whether the room contains a board, a frontline team, a community group, a cross-organisation working group or a conference audience of two hundred, the work is to create conditions where the right conversations happen and meaningful outcomes emerge.
+
+### Who it's for
+- Health and human services
+- Government departments and agencies
+- Community sector organisations
+- Legal aid services
+- Private sector organisations
+- Conferences and industry events
+
+### What's included
+- Leadership team away-days and planning sessions
+- All-staff forums and culture days
+- Stakeholder engagement events
+- Cross-organisation working groups
+- Board meetings and retreats
+- Conference facilitation and panel moderation
+- Community forums and town hall events
+- Pre-event design with the convening team
+- Post-event synthesis and follow-up
+
+### Typical engagements
+- A half-day leadership team offsite to work through a difficult decision
+- An all-staff culture day for an organisation in transition
+- A stakeholder engagement event bringing together partners with different agendas
+- Conference moderation for a sector event
+- A series of community forums on a contentious topic
+
+### Outcomes
+Genuine engagement in the room.  Decisions people understand and own.  Energy that carries beyond the day.  Clients consistently report that participants leave feeling heard, having contributed, and clearer about what happens next.
+
+**Related services:** Strategy and Planning, Culture
+
+**CTA heading:** Planning something that needs to land well?
+
+---
+
+## Evaluation and Research (`services/evaluation-and-research.html`)
+
+**H1:** Evaluation and Research
+
+**Subheading:** Qualitative programme evaluation and research that captures what data alone cannot.
+
+### What it is
+Understanding whether a programme is working, and why, requires more than data.  Macaulay Consulting contributes to evaluations that assess appropriateness, effectiveness and impact, with a particular focus on qualitative research and bringing lived experience into evidence that informs decision-making.
+
+The work pairs methodological rigour with the kind of human listening that produces real insight.  Numbers tell you what is happening.  Good qualitative work tells you why, in what context, and what to do next.
+
+### Who it's for
+- Health and human services
+- Government departments and agencies evaluating policy or programmes
+- Community sector organisations measuring social impact
+- Philanthropic funders assessing grantee work
+- Legal aid services evaluating access and outcomes
+- Private sector organisations with social impact reporting needs
+
+### What's included
+- Programme evaluation (qualitative component, or full qualitative evaluation)
+- Evaluation framework design
+- Stakeholder and community consultation
+- Focus groups and in-depth interviews
+- Lived experience research
+- Thematic analysis and synthesis
+- Synthesis reporting for decision-makers, boards or funders
+- Co-presented findings to leadership and stakeholders
+
+### Typical engagements
+- The qualitative component of a mixed-methods programme evaluation
+- A standalone qualitative evaluation of a new service
+- Lived experience research to inform service design
+- Community consultation as part of a strategy or planning process
+- Synthesis of existing evaluation data into board-ready findings
+
+### Outcomes
+Evidence that informs decisions, not just evidence that meets reporting obligations.  The work produces findings decision-makers can actually act on, grounded in the perspectives of the people the programme exists to serve.
+
+**Related services:** Co-design, Child and Youth Work
+
+**CTA heading:** Need evidence that decision-makers will act on?
+
+---
+
+## Culture (`services/culture.html`)
+
+**H1:** Culture
+
+**Subheading:** Structured team culture work for organisations that take their people seriously.
+
+### What it is
+The systems, structures and processes of an organisation determine what gets done.  The culture of an organisation determines whether the people doing it stay, thrive, speak up and do their best work.  Culture is not a soft layer sitting on top of the real work.  It is the foundation everything else rests on.
+
+Macaulay Consulting's culture work helps organisations strengthen that foundation.  Drawing on emotional culture research, neuro-leadership frameworks, psychological safety practice and applied facilitation, Caroline works with teams and organisations to build the conditions where good people stay, hard conversations happen and the work actually gets done.
+
+### Who it's for
+- Leadership teams who sense something is not working but cannot quite name it
+- Organisations going through structural change, leadership transition or merger
+- Teams recovering from a difficult period
+- Organisations that have invested in strategy and now need to invest in the people delivering it
+- Workplaces seeing the early signs of burnout, disengagement or churn
+
+The work suits any sector, though it has particular resonance in high-pressure environments: health and human services, frontline community work, legal aid and similar settings where the work itself is demanding.
+
+### What's included
+- Team culture assessment using validated emotional culture tools
+- Psychological safety diagnostic and development work
+- Neuro-leadership-based team development
+- Facilitated culture-shaping conversations with leadership teams
+- Embedded rituals and practices that sustain change beyond the engagement
+- Coaching support for team leaders carrying the work forward
+- Multi-team or whole-of-organisation culture programmes
+
+### Featured programme: More Joy at Work
+More Joy at Work is Macaulay Consulting's branded team culture programme: a structured, evidence-based approach delivered as a two-hour team experience, a full-day co-design, or a six-session development series.  It packages culture work into formats teams can engage with practically.
+
+Link: Find out more about More Joy at Work → /more-joy-at-work
+
+### Typical engagements
+- A leadership team going through significant change who need to align on how they will work together
+- A frontline team carrying high emotional load who need structured support to sustain themselves
+- An organisation embedding psychological safety as part of a broader change programme
+- A team coming out of a restructure and rebuilding shared purpose
+
+### Outcomes
+Teams that have a shared language for how they work together.  Practices that survive the engagement.  Measurable lifts in psychological safety, connection and sustained performance.  Workplaces where people feel heard, supported and energised, and where leadership has the tools to keep building on that.
+
+**Related services:** Facilitation, Strategy and Planning
+
+**CTA heading:** Interested in building a healthier team culture?
+
+---
+
+## Child and Youth Work (`services/child-and-youth-work.html`)
+
+**H1:** Child and Youth Work
+
+**Subheading:** Specialist facilitation, co-design and engagement with children, young people and the organisations that serve them.
+
+### What it is
+Work involving children and young people is not work that scales down from adult-centred methods.  It needs its own design, its own pace, its own ways of building trust and its own ethical posture.
+
+Caroline Macaulay brings fifteen years of frontline practice as a speech pathologist working with children, young people and families, alongside more than a decade of strategy, co-design and facilitation work with the organisations that serve them.  This combination produces specialist capability for organisations whose work touches young people, whether the engagement is directly with young participants or with the systems shaping their experience.
+
+### Who it's for
+- Youth services organisations developing strategy, services or programmes
+- Family services and family support organisations
+- Education systems, schools and student services
+- Children's health services and paediatric health programmes
+- Child protection and out-of-home care services
+- Community sector organisations working with young people
+- Government departments responsible for child, youth and family policy
+- Legal aid services working with young clients
+
+### What's included
+- Co-design with children and young people, including youth advisory and lived experience panels
+- Strategy and planning for youth-serving organisations
+- Facilitation with mixed-age groups, including youth and adult stakeholders together
+- Qualitative research with young participants, designed to be safe, accessible and meaningful
+- Engagement with families and family support workers
+- Service design grounded in the developmental, cultural and access needs of young people
+
+All engagements are designed with appropriate ethical, safeguarding and trauma-informed considerations.  Caroline brings practical knowledge of working with young people in safe, structured and empowering ways.
+
+### Typical engagements
+- A youth strategy shaped with a youth advisory group
+- Co-design with young service users to inform service redesign
+- Qualitative research with young participants to inform a strategy or programme
+- Facilitation of an organisation-wide conversation involving youth and adult stakeholders
+- Strategy development for an organisation whose primary audience is children, young people and families
+
+### Outcomes
+Strategies, services and programmes that carry real authority because they were built with the young people they exist to serve.  Organisations that have practical confidence in how to engage young people meaningfully.  Workforce capability and ethical infrastructure for ongoing youth engagement.
+
+**Related case study:** yourtown
+
+**Related services:** Co-design, Evaluation and Research
+
+**CTA heading:** Working with or for young people?
 
 ---
 
