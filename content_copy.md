@@ -40,7 +40,7 @@ About · Services · How it works · Case Studies · More Joy at Work · FAQ · 
 ### Hero
 **Eyebrow:** Brisbane · Queensland
 
-**Heading:** Turning good intentions into *clarity and results.*
+**Heading:** Turning purpose into clarity, and *clarity into results.*
 
 **Subheading:** Macaulay Consulting helps health and public sector organisations think more clearly, work more effectively, and build cultures where people and ideas can flourish.
 
