@@ -6,17 +6,17 @@
 
 /* ---- DESIGN TOKENS ---- */
 :root {
-  --color-moss:         #2A3B30;
-  --color-moss-dark:    #1E2C24;
-  --color-parchment:    #FAF7F2;
-  --color-linen:        #F0EAE0;
-  --color-cumquat:      #E07828;
-  --color-cumquat-dark: #C4681E;
-  --color-cumquat-pale: #FDF0E4;
-  --color-slate:        #5C5248;
-  --color-stone:        #DDD5C8;
-  --color-text:         #1E1A16;
-  --color-text-light:   #5C5248;
+  --color-moss:         #0F0F0F;   /* near-black — replaces moss green */
+  --color-moss-dark:    #0A0A0A;   /* footer background */
+  --color-parchment:    #FFFFFF;   /* page background */
+  --color-linen:        #FAFAFA;   /* alternate section background */
+  --color-cumquat:      #F08322;   /* brand accent — brighter in Letterpress */
+  --color-cumquat-dark: #D86B12;
+  --color-cumquat-pale: #FEF3EC;   /* pale cumquat — More Joy hero */
+  --color-slate:        #4A4A4A;
+  --color-stone:        #D9D9D9;
+  --color-text:         #0F0F0F;
+  --color-text-light:   #4A4A4A;
   --color-white:        #FFFFFF;
   --color-error:        #C0392B;
 
