@@ -240,19 +240,21 @@ Consulting is a credence good: clients cannot evaluate quality until after the e
 
 ## Design system
 
-### Palette
+### Palette — Letterpress identity (chosen 2026-05-17)
+Black, white, cumquat. The cumquat does all the work. Reads as: gallery, atelier, very-good-bookshop.
+
 ```css
---color-moss:         #2A3B30   /* deep moss — dark sections, nav logo, headings */
---color-moss-dark:    #1E2C24   /* footer background */
---color-parchment:    #FAF7F2   /* page background, hero */
---color-linen:        #F0EAE0   /* alternate section background, card hover */
---color-cumquat:      #E07828   /* brand accent — CTAs, links, highlights */
---color-cumquat-dark: #C4681E   /* hover state for cumquat elements */
---color-cumquat-pale: #FDF0E4   /* pale cumquat — More Joy hero background */
---color-slate:        #5C5248   /* secondary text, labels */
---color-stone:        #DDD5C8   /* borders, dividers */
---color-text:         #1E1A16   /* body text */
---color-text-light:   #5C5248   /* lighter body text (same as slate) */
+--color-moss:         #0F0F0F   /* near-black — dark sections, headings (replaces moss green) */
+--color-moss-dark:    #0A0A0A   /* footer background */
+--color-parchment:    #FFFFFF   /* page background, hero */
+--color-linen:        #FAFAFA   /* alternate section background, card hover */
+--color-cumquat:      #F08322   /* brand accent — CTAs, links, highlights (brighter in Letterpress) */
+--color-cumquat-dark: #D86B12   /* hover state for cumquat elements */
+--color-cumquat-pale: #FEF3EC   /* pale cumquat — More Joy hero background */
+--color-slate:        #4A4A4A   /* secondary text, labels */
+--color-stone:        #D9D9D9   /* borders, dividers */
+--color-text:         #0F0F0F   /* body text */
+--color-text-light:   #4A4A4A   /* lighter body text */
 --color-white:        #FFFFFF   /* nav background, card backgrounds */
 --color-error:        #C0392B   /* form validation errors */
 ```
@@ -273,7 +275,7 @@ Italic (`<em>`) inside headings renders in cumquat (`--color-cumquat`).
 ### Section backgrounds
 - `.bg-parchment` → `#FAF7F2`
 - `.bg-linen` → `#F0EAE0`
-- `.bg-moss` → `#2A3B30` (text overrides: headings → parchment, p → 85% parchment)
+- `.bg-moss` → `#0F0F0F` (text overrides: headings → parchment, p → 85% parchment)
 - `.bg-cumquat-pale` → `#FDF0E4`
 
 ### Section label (eyebrow text above headings)
@@ -295,7 +297,7 @@ Rendered in cumquat, italic Lora, 13px, uppercase letter-spacing.
 - Mobile: hamburger (`.nav-hamburger`) at 860px, opens fullscreen moss overlay (`.nav-mobile`)
 
 ### Footer
-- Background: `--color-moss-dark` (`#1E2C24`)
+- Background: `--color-moss-dark` (`#0A0A0A`)
 - Three-column grid (`.footer-grid`, `1.4fr 1fr 1.4fr`):
   - `.footer-col-brand` — wordmark, `.footer-descriptor`, `.footer-contact` (email + phone), `.footer-affiliation` ("Member of the Clarity Consortium")
   - `.footer-col-nav` — `.footer-col-label` ("Navigate") + `.footer-nav` list (About, Services, How it works, Case Studies, More Joy at Work, FAQ, Contact)
@@ -414,7 +416,7 @@ Uses [Web3Forms](https://web3forms.com). Free tier, no server required.
 ## Pending / placeholders
 
 - [x] **Logo artwork — horizontal nav lockup** — `assets/logos/cm-consulting-logo-horizontal.png` (RGBA, transparent background) is live in the nav on all pages.
-- [ ] **Logo artwork — footer/dark variant** — the current horizontal logo is dark green and orange, so it disappears on the footer's moss-dark background. Footer still uses the text wordmark. Needs a parchment/cream version on transparent background (RGB green is `42, 59, 48` / `#2A3B30`; orange is `#E07828`).
+- [ ] **Logo artwork — footer/dark variant** — the current horizontal logo is dark green and orange, so it disappears on the footer's near-black background. Footer still uses the text wordmark. Needs a white/light version on transparent background to sit on `#0A0A0A`.
 - [x] **Headshot** — `assets/images/portrait.webp`, live on About page
 - [x] **Site imagery** — `small-group-session.webp` (services), `workshop-lead.webp` (More Joy), `your-town-engagement-strategy.webp` (case studies) are live
 - [ ] **Web3Forms key** — enter `caro@consultcm.com.au` at web3forms.com, paste key into `contact.html`, remove `onsubmit="return false;"` and the "not yet active" notice
