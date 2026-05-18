@@ -67,7 +67,37 @@
   --font-loaded:  'https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap';
 }
 
-/* OPTION F — Minimal Contemporary ------------------------------------------- */
+/* OPTION I — Sharp Sans ----------------------------------------------- */
+/* Syne (display) + Inter (body).  Syne has wide, architectural geometry  */
+/* that gives headings real presence without serifs.  Inter is the         */
+/* gold-standard screen sans.  Reads as: design studio, precision work.   */
+.type-sans-sharp {
+  --font-display: 'Syne', system-ui, sans-serif;
+  --font-body:    'Inter', system-ui, sans-serif;
+  --font-loaded:  'https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap';
+}
+
+/* OPTION J — Warm Geometric ------------------------------------------- */
+/* Plus Jakarta Sans throughout.  A contemporary geometric sans with just  */
+/* enough warmth and personality for a people-facing consulting practice.  */
+/* Reads as: approachable, contemporary, Queensland-forward.               */
+.type-sans-warm {
+  --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-body:    'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-loaded:  'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap';
+}
+
+/* OPTION K — Clean Professional --------------------------------------- */
+/* DM Sans throughout.  A matched-designer sans built for screens.        */
+/* Very clean, neutral, professional.  The least obtrusive option.        */
+/* Reads as: professional services, tech-adjacent, trusted.               */
+.type-sans-clean {
+  --font-display: 'DM Sans', system-ui, sans-serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+  --font-loaded:  'https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap';
+}
+
+
 /* Manrope all-sans.  From the font-options exploration.                      */
 /* Reads as: calm, refined, excellent readability, quieter modern confidence. */
 .type-minimal {
@@ -240,6 +270,126 @@
   --color-anchor-light: #D5E5E9;  /* pale sea mist                           */
   --color-rule:         #EAE2D2;
   --color-shadow:       rgba(26, 24, 21, 0.06);
+  --color-white:        #FFFFFF;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* 7. COBALT                                                                 */
+/* ------------------------------------------------------------------------- */
+/* White + deep cobalt blue + cumquat.  Clean, high-contrast, authoritative. */
+/* The cobalt does the heavy lifting — anchors dark sections, section heads,  */
+/* and credentials.  Cumquat pops hard against it.  Reads as: confident,     */
+/* contemporary professional services.                                        */
+/* Recommended typography: type-sans-sharp or type-sans-clean.               */
+
+.palette-cobalt {
+  --color-bg:           #FFFFFF;
+  --color-bg-alt:       #F0F4FF;  /* whisper of cobalt blue                  */
+  --color-text:         #0F1729;  /* near-black, cool undertone              */
+  --color-text-light:   #475569;
+  --color-accent:       #F08322;  /* cumquat                                 */
+  --color-accent-dark:  #D86B12;
+  --color-anchor:       #1B3A8F;  /* deep cobalt                             */
+  --color-anchor-light: #DBEAFE;  /* pale cobalt                             */
+  --color-rule:         #E2E8F0;
+  --color-shadow:       rgba(15, 23, 41, 0.07);
+  --color-white:        #FFFFFF;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* 8. INDIGO                                                                  */
+/* ------------------------------------------------------------------------- */
+/* White + rich indigo + cumquat.  Indigo sits between blue and violet —     */
+/* more creative and expressive than cobalt, still grounded.  The cumquat    */
+/* is a perfect complement: warm against cool.  Reads as: thoughtful,        */
+/* creative sector, art + commerce.                                           */
+/* Recommended typography: type-sans-warm or type-sans-sharp.                */
+
+.palette-indigo {
+  --color-bg:           #FFFFFF;
+  --color-bg-alt:       #F5F3FF;  /* whisper of indigo                       */
+  --color-text:         #1C1B2E;  /* near-black, warm violet undertone       */
+  --color-text-light:   #5B5A72;
+  --color-accent:       #F08322;  /* cumquat                                 */
+  --color-accent-dark:  #D86B12;
+  --color-anchor:       #3730A3;  /* rich indigo                             */
+  --color-anchor-light: #EEF2FF;  /* pale indigo                             */
+  --color-rule:         #E5E3F5;
+  --color-shadow:       rgba(28, 27, 46, 0.07);
+  --color-white:        #FFFFFF;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* 9. MIDNIGHT                                                                */
+/* ------------------------------------------------------------------------- */
+/* White + deep navy + cumquat.  The most authoritative of the blue family.  */
+/* Navy reads as serious, trustworthy, institutional — all assets in health  */
+/* and public sector.  Cumquat lifts it out of corporate.  Reads as:         */
+/* senior consulting, strategic advisory, board-ready.                       */
+/* Recommended typography: type-sans-clean or type-minimal.                  */
+
+.palette-midnight {
+  --color-bg:           #FFFFFF;
+  --color-bg-alt:       #F1F2F6;  /* whisper of cool grey-blue               */
+  --color-text:         #0B0E1C;  /* near-black, deep navy undertone         */
+  --color-text-light:   #4A5268;
+  --color-accent:       #F08322;  /* cumquat                                 */
+  --color-accent-dark:  #D86B12;
+  --color-anchor:       #0F1B3D;  /* deep midnight navy                      */
+  --color-anchor-light: #E8EBF6;
+  --color-rule:         #DDE0EC;
+  --color-shadow:       rgba(11, 14, 28, 0.07);
+  --color-white:        #FFFFFF;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* 10. CARBON                                                                 */
+/* ------------------------------------------------------------------------- */
+/* White + warm charcoal + cumquat.  No second colour — the structure comes  */
+/* from the charcoal alone.  Similar logic to Letterpress but warmer: the    */
+/* charcoal has a brown undertone that gives it more comfort.  Reads as:     */
+/* premium, editorial, restrained luxury.                                    */
+/* Recommended typography: type-minimal or type-sans-warm.                   */
+
+.palette-carbon {
+  --color-bg:           #FFFFFF;
+  --color-bg-alt:       #F7F7F5;  /* barely warm off-white                   */
+  --color-text:         #1A1A18;  /* near-black with warm undertone          */
+  --color-text-light:   #555550;
+  --color-accent:       #F08322;  /* cumquat                                 */
+  --color-accent-dark:  #D86B12;
+  --color-anchor:       #28271F;  /* warm charcoal                           */
+  --color-anchor-light: #EAEAE7;  /* pale warm grey                          */
+  --color-rule:         #E2E2DF;
+  --color-shadow:       rgba(26, 26, 24, 0.07);
+  --color-white:        #FFFFFF;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* 11. PACIFIC                                                                */
+/* ------------------------------------------------------------------------- */
+/* White + deep ocean teal + cumquat.  Teal is the health-sector colour:     */
+/* every major hospital system in Australia uses it.  This makes it feel     */
+/* naturally at home without being derivative.  The cumquat cuts through.    */
+/* Reads as: health-adjacent, calm authority, clear thinking.                */
+/* Recommended typography: type-grotesk or type-sans-clean.                  */
+
+.palette-pacific {
+  --color-bg:           #FFFFFF;
+  --color-bg-alt:       #F0F9F9;  /* faint ocean wash                        */
+  --color-text:         #0A1F24;  /* near-black, deep teal undertone         */
+  --color-text-light:   #3D6672;
+  --color-accent:       #F08322;  /* cumquat                                 */
+  --color-accent-dark:  #D86B12;
+  --color-anchor:       #0E7490;  /* deep ocean teal                         */
+  --color-anchor-light: #CFFAFE;  /* pale aqua                               */
+  --color-rule:         #D0EDF0;
+  --color-shadow:       rgba(10, 31, 36, 0.07);
   --color-white:        #FFFFFF;
 }
 
